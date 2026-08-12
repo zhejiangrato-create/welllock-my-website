@@ -317,6 +317,54 @@ const HTML = `<!DOCTYPE html>
             background: #f5f5f5;
         }
 
+        /* ===== 规格对比表 ===== */
+        .spec-table {
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .spec-header {
+            display: grid;
+            grid-template-columns: 2fr 1.5fr 1.5fr 2fr 0.7fr 0.8fr;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 10px 16px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .spec-row {
+            display: grid;
+            grid-template-columns: 2fr 1.5fr 1.5fr 2fr 0.7fr 0.8fr;
+            padding: 14px 16px;
+            border-bottom: 1px solid #eaeaea;
+            font-size: 13px;
+            color: #444;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .spec-row:last-child { border-bottom: none; }
+        .spec-row:hover { background: #f9f9f9; }
+
+        .spec-product {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .spec-product strong { font-size: 14px; color: #1a1a1a; }
+
+        /* ===== FAQ 响应式 ===== */
+        @media (max-width: 768px) {
+            .faq-grid { grid-template-columns: 1fr !important; }
+
         /* ===== 询盘表单 ===== */
         .inquiry-section {
             background: #fafafa;
@@ -500,6 +548,7 @@ const HTML = `<!DOCTYPE html>
             <nav>
                 <a href="#about">About</a>
                 <a href="#products">Products</a>
+                <a href="#faq">FAQ</a>
                 <a href="/blog">Blog</a>
                 <a href="#inquiry" class="nav-cta">Get a Quote</a>
             </nav>
@@ -550,27 +599,80 @@ const HTML = `<!DOCTYPE html>
     <section class="section" id="products">
         <div class="container">
             <p class="section-label">Products</p>
-            <h2>Featured <strong>locks &amp; hardware</strong></h2>
-            <p class="lead">OEM and custom specifications available.</p>
+            <h2>Three products, <strong>fully customizable</strong></h2>
+            <p class="lead">Standard specs below. Need different material, finish, or keying? Just ask.</p>
 
-            <div class="product-grid">
-                <div class="product-item">
-                    <img src="https://www.nbrato.com/data/watermark/20180911/5b978c4796d8c.jpg" alt="T Handle Lock" class="image-box" style="object-fit:cover;" />
-                    <h4>T Handle Lock</h4>
-                    <p>Zinc alloy, chrome plated — for cabinets & RV doors</p>
-                    <a href="#inquiry" class="btn-small">Inquire</a>
+            <div class="spec-table" style="margin-top:32px;">
+                <div class="spec-header">
+                    <span>Product</span><span>Material</span><span>Key Features</span><span>Applications</span><span>MOQ</span><span></span>
                 </div>
-                <div class="product-item">
-                    <img src="https://www.nbrato.com/data/watermark/20240507/6639d7745f7cb.jpg" alt="Combination Brass Padlock" class="image-box" style="object-fit:cover;" />
-                    <h4>Combination Brass Padlock</h4>
-                    <p>Solid brass body, 4-digit resettable code</p>
-                    <a href="#inquiry" class="btn-small">Inquire</a>
+                <div class="spec-row">
+                    <div class="spec-product">
+                        <img src="https://www.nbrato.com/data/watermark/20180911/5b978c4796d8c.jpg" alt="T Handle Lock" width="60" height="60" style="object-fit:cover;border-radius:4px;" />
+                        <strong>T Handle Lock</strong>
+                    </div>
+                    <span>Zinc alloy, chrome plated</span>
+                    <span>Multiple sizes, dust-proof, anti-rust</span>
+                    <span>Cabinet, RV, garage door, fire door</span>
+                    <span>500 pcs</span>
+                    <span><a href="#inquiry" class="btn-small">Inquire</a></span>
                 </div>
-                <div class="product-item">
-                    <img src="https://www.nbrato.com/data/watermark/20180912/5b98d3ef213f1.jpg" alt="Industrial Paddle Lock" class="image-box" style="object-fit:cover;" />
-                    <h4>Industrial Paddle Lock</h4>
-                    <p>Heavy-duty, for telecom & electrical cabinets</p>
-                    <a href="#inquiry" class="btn-small">Inquire</a>
+                <div class="spec-row">
+                    <div class="spec-product">
+                        <img src="https://www.nbrato.com/data/watermark/20240507/6639d7745f7cb.jpg" alt="Combination Brass Padlock" width="60" height="60" style="object-fit:cover;border-radius:4px;" />
+                        <strong>Combination Brass Padlock</strong>
+                    </div>
+                    <span>Solid brass, hardened steel shackle</span>
+                    <span>4-digit resettable, weather-resistant</span>
+                    <span>Lockers, toolboxes, utility cabinets</span>
+                    <span>500 pcs</span>
+                    <span><a href="#inquiry" class="btn-small">Inquire</a></span>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-product">
+                        <img src="https://www.nbrato.com/data/watermark/20180912/5b98d3ef213f1.jpg" alt="Industrial Paddle Lock" width="60" height="60" style="object-fit:cover;border-radius:4px;" />
+                        <strong>Industrial Paddle Lock</strong>
+                    </div>
+                    <span>Heavy-duty zinc alloy / steel</span>
+                    <span>Multiple keying options, IP65 optional</span>
+                    <span>Telecom, electrical, industrial cabinets</span>
+                    <span>500 pcs</span>
+                    <span><a href="#inquiry" class="btn-small">Inquire</a></span>
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:24px;color:#888;font-size:14px;">Don't see your spec? We do OEM. <a href="#inquiry" style="color:#c9a84c;">Tell us what you need →</a></p>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq" style="background:#fafafa;">
+        <div class="container">
+            <p class="section-label">FAQ</p>
+            <h2>Questions <strong>buyers ask</strong></h2>
+            <div class="faq-grid" style="margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+                <div class="faq-item" style="background:#fff;padding:20px;border-radius:8px;border:1px solid #eaeaea;">
+                    <h4 style="font-size:15px;margin-bottom:6px;">Minimum order quantity?</h4>
+                    <p style="font-size:14px;color:#666;">Typically 500 units per SKU. Smaller trial orders negotiable for new partnerships.</p>
+                </div>
+                <div class="faq-item" style="background:#fff;padding:20px;border-radius:8px;border:1px solid #eaeaea;">
+                    <h4 style="font-size:15px;margin-bottom:6px;">Can you do custom branding?</h4>
+                    <p style="font-size:14px;color:#666;">Yes — logo laser engraving, custom packaging, private label. Send us your artwork.</p>
+                </div>
+                <div class="faq-item" style="background:#fff;padding:20px;border-radius:8px;border:1px solid #eaeaea;">
+                    <h4 style="font-size:15px;margin-bottom:6px;">How long for samples?</h4>
+                    <p style="font-size:14px;color:#666;">Standard samples shipped in 3-5 days. Custom samples typically 7-10 days.</p>
+                </div>
+                <div class="faq-item" style="background:#fff;padding:20px;border-radius:8px;border:1px solid #eaeaea;">
+                    <h4 style="font-size:15px;margin-bottom:6px;">What's your lead time?</h4>
+                    <p style="font-size:14px;color:#666;">25-30 days for standard orders. We'll confirm exact timeline after reviewing your specs.</p>
+                </div>
+                <div class="faq-item" style="background:#fff;padding:20px;border-radius:8px;border:1px solid #eaeaea;">
+                    <h4 style="font-size:15px;margin-bottom:6px;">How do you ensure quality?</h4>
+                    <p style="font-size:14px;color:#666;">Pre-production sample approval → batch inspection → pre-shipment check. We match the sample you approved.</p>
+                </div>
+                <div class="faq-item" style="background:#fff;padding:20px;border-radius:8px;border:1px solid #eaeaea;">
+                    <h4 style="font-size:15px;margin-bottom:6px;">Payment terms?</h4>
+                    <p style="font-size:14px;color:#666;">T/T (30% deposit, 70% before shipment) or L/C for larger orders.</p>
                 </div>
             </div>
         </div>
@@ -580,9 +682,31 @@ const HTML = `<!DOCTYPE html>
     <section class="section inquiry-section" id="inquiry">
         <div class="container">
             <p class="section-label">Contact</p>
-            <h2>Send an <strong>inquiry</strong></h2>
-            <p class="lead" style="margin-bottom:16px;">We'll get back to you within 24 hours.</p>
-            <p style="margin-bottom:32px;">
+            <h2>What are you <strong>securing?</strong></h2>
+            <p class="lead" style="margin-bottom:24px;">Tell us your industry — we'll recommend the right product.</p>
+
+            <div style="max-width:640px;margin:0 auto 32px;">
+                <div class="industry-options" style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+                    <label class="industry-chip" style="background:#fff;border:1px solid #ddd;padding:10px 20px;border-radius:30px;cursor:pointer;font-size:14px;transition:all .2s;">
+                        <input type="radio" name="industry" value="Telecom / Electrical" style="display:none;" /> Telecom / Electrical
+                    </label>
+                    <label class="industry-chip" style="background:#fff;border:1px solid #ddd;padding:10px 20px;border-radius:30px;cursor:pointer;font-size:14px;transition:all .2s;">
+                        <input type="radio" name="industry" value="RV / Automotive" style="display:none;" /> RV / Automotive
+                    </label>
+                    <label class="industry-chip" style="background:#fff;border:1px solid #ddd;padding:10px 20px;border-radius:30px;cursor:pointer;font-size:14px;transition:all .2s;">
+                        <input type="radio" name="industry" value="Storage / Lockers" style="display:none;" /> Storage / Lockers
+                    </label>
+                    <label class="industry-chip" style="background:#fff;border:1px solid #ddd;padding:10px 20px;border-radius:30px;cursor:pointer;font-size:14px;transition:all .2s;">
+                        <input type="radio" name="industry" value="Industrial Equipment" style="display:none;" /> Industrial Equipment
+                    </label>
+                    <label class="industry-chip" style="background:#fff;border:1px solid #ddd;padding:10px 20px;border-radius:30px;cursor:pointer;font-size:14px;transition:all .2s;">
+                        <input type="radio" name="industry" value="Other" style="display:none;" /> Other
+                    </label>
+                </div>
+                <div id="recommendation" style="display:none;margin-top:20px;padding:16px;background:#fff;border-radius:8px;border:1px solid #c9a84c;text-align:center;font-size:14px;color:#333;"></div>
+            </div>
+
+            <p style="text-align:center;margin-bottom:16px;">
                 <a href="https://wa.me/8618658255961" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;background:#25d366;color:#fff;padding:8px 20px;border-radius:30px;text-decoration:none;font-size:14px;font-weight:600;">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:6px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                     Chat on WhatsApp
@@ -606,7 +730,7 @@ const HTML = `<!DOCTYPE html>
                 </div>
                 <div class="form-group">
                     <label>Message *</label>
-                    <textarea name="message" placeholder="Tell us what you need — product, quantity, specifications..."></textarea>
+                    <textarea name="message" placeholder="What product, quantity, and specifications do you need?"></textarea>
                 </div>
                 <div id="form-status" style="display:none;margin-bottom:16px;padding:12px;border-radius:6px;font-size:14px;"></div>
                 <div class="cf-turnstile" data-sitekey="0x4AAAAAAENoOqYh6_8yX0DZ" style="margin-bottom:16px;"></div>
@@ -651,9 +775,34 @@ const HTML = `<!DOCTYPE html>
         </div>
     </footer>
 
-    <!-- ===== 表单提交脚本 ===== -->
+    <!-- ===== 行业选择 + 表单提交脚本 ===== -->
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <script>
+    // Industry chip selection
+    const recs = {
+        'Telecom / Electrical': 'Recommended: <strong>Industrial Paddle Lock</strong> — IP65 optional, multiple keying. Also consider T Handle Lock for access panels.',
+        'RV / Automotive': 'Recommended: <strong>T Handle Lock</strong> — chrome plated, vibration-resistant. Available in multiple sizes for different door thicknesses.',
+        'Storage / Lockers': 'Recommended: <strong>Combination Brass Padlock</strong> — 4-digit resettable, weatherproof. Custom engraving available.',
+        'Industrial Equipment': 'Recommended: <strong>Industrial Paddle Lock</strong> — heavy-duty zinc alloy. Also compatible with T Handle Lock.',
+        'Other': "We'll review your requirements and recommend the best solution. Describe your use case in the message below."
+    };
+    document.querySelectorAll('.industry-chip').forEach(chip => {
+        chip.addEventListener('click', function() {
+            document.querySelectorAll('.industry-chip').forEach(c => {
+                c.style.background = '#fff';
+                c.style.borderColor = '#ddd';
+                c.style.color = '#333';
+            });
+            this.style.background = '#1a1a1a';
+            this.style.borderColor = '#1a1a1a';
+            this.style.color = '#fff';
+            const val = this.querySelector('input').value;
+            document.getElementById('recommendation').style.display = 'block';
+            document.getElementById('recommendation').innerHTML = recs[val];
+        });
+    });
+
+    // Form submission
     document.getElementById('inquiry-form').addEventListener('submit', async function(e) {
         e.preventDefault();
         const btn = document.getElementById('form-submit-btn');
@@ -763,11 +912,73 @@ const BLOG_HTML = `<style>
   </div>
 </div>
 <footer>&copy; 2026 NINGBO RATO HARDWARE CO.,LTD</footer>`;
+const LLMS_TXT = `# WellLock — Security Hardware Manufacturer
+# AI-readable site index for LLM crawlers (GPTBot, ClaudeBot, PerplexityBot)
+
+## About
+- Company: NINGBO RATO HARDWARE CO.,LTD (Ningbo, China)
+- Brand: WellLock
+- Website: https://welllocks.com
+- Founded: 2014
+- Factory: 4,000 m² owned facility
+- Certifications: CE, ROHS (certificate numbers available on request)
+- Export: 50+ countries
+- Business model: B2B OEM/ODM, factory-direct supply to industrial end-users
+- NOT a distributor or retailer
+
+## Products
+### T Handle Lock
+- Material: Zinc alloy, chrome plated
+- Use: Cabinets, RV doors, garage doors, fire doors
+- MOQ: 500 units
+- Custom: Keying, finish, logo available
+- More: https://welllocks.com/#products
+
+### Combination Brass Padlock
+- Material: Solid brass body, hardened steel shackle
+- Features: 4-digit resettable combination
+- Use: Storage lockers, toolboxes, utility cabinets
+- MOQ: 500 units
+- Custom: Engraving, color, shackle length available
+- More: https://welllocks.com/#products
+
+### Industrial Paddle Lock
+- Material: Heavy-duty zinc alloy / steel
+- Use: Telecom cabinets, electrical enclosures, industrial equipment
+- MOQ: 500 units
+- Custom: Lock cylinder, finish, keying options available
+- More: https://welllocks.com/#products
+
+## Services
+- OEM/ODM: Custom specifications, materials, finishes, branding
+- Sampling: Available, contact for lead time
+- Quality: Pre-shipment inspection, sample-to-production matching
+- Lead time: Typically 25-30 days (varies by order)
+- Payment: T/T, L/C
+
+## Contact
+- Email: zhejiangrato@gmail.com
+- WhatsApp: +86 18658255961
+- Inquiry form: https://welllocks.com/#inquiry
+- Blog: https://welllocks.com/blog
+
+## FAQ
+- Minimum order quantity? Typically 500 units per SKU
+- Can you do custom branding? Yes — logo engraving, custom packaging, private label
+- Do you provide samples? Yes, contact for sample lead time and cost
+- What certifications do you have? CE, ROHS
+- What markets do you serve? 50+ countries, focus on Belt & Road, Europe, Americas
+- How do you ensure quality? Pre-production sample approval + pre-shipment inspection
+`;
 
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     const path = url.pathname;
+
+    if (path === "/llms.txt") {
+      return new Response(LLMS_TXT, { headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "public, max-age=3600" } });
+    }
 
     if (path === "/blog" || path === "/blog/") {
       return new Response(BLOG_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
@@ -829,7 +1040,8 @@ async function handleInquiry(request, env) {
   }
 
   const ts = new Date().toISOString();
-  const subject = `[WellLock] ${name} — ${company || "N/A"}`;
+  const industry = body.industry || "Not specified";
+  const subject = `[WellLock] ${name} — ${company || "N/A"} [${industry}]`;
 
   if (env.RESEND_API_KEY) {
     await fetch("https://api.resend.com/emails", {
@@ -839,12 +1051,12 @@ async function handleInquiry(request, env) {
         from: "WellLock <inquiry@welllocks.com>",
         to: env.RECIPIENT_EMAIL || "zhejiangrato@gmail.com",
         subject,
-        html: `<h2>New Inquiry</h2><table><tr><td><b>Name</b></td><td>${name}</td></tr><tr><td><b>Company</b></td><td>${company||"N/A"}</td></tr><tr><td><b>Email</b></td><td>${email}</td></tr><tr><td><b>Time</b></td><td>${ts}</td></tr><tr><td><b>Message</b></td><td>${message}</td></tr></table>`,
+        html: `<h2>New Inquiry</h2><table><tr><td><b>Name</b></td><td>${name}</td></tr><tr><td><b>Company</b></td><td>${company||"N/A"}</td></tr><tr><td><b>Industry</b></td><td>${industry}</td></tr><tr><td><b>Email</b></td><td>${email}</td></tr><tr><td><b>Time</b></td><td>${ts}</td></tr><tr><td><b>Message</b></td><td>${message}</td></tr></table>`,
         reply_to: email,
       })
     }).catch(e => console.error("Resend:", e));
   }
 
-  console.log(`[INQUIRY] ${name} <${email}> — ${company || "N/A"}`);
+  console.log(`[INQUIRY] ${name} <${email}> — ${company || "N/A"} [${industry}]`);
   return Response.json({ success: true, message: "Thank you! We'll reply within 24 hours." });
 }
