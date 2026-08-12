@@ -1,4 +1,3 @@
-// WellLock Worker v2 — products, turnstile, blog
 const HTML = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -610,7 +609,7 @@ const HTML = `<!DOCTYPE html>
                     <textarea name="message" placeholder="Tell us what you need — product, quantity, specifications..."></textarea>
                 </div>
                 <div id="form-status" style="display:none;margin-bottom:16px;padding:12px;border-radius:6px;font-size:14px;"></div>
-                <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITE_KEY" style="margin-bottom:16px;"></div>
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAAENoOqYh6_8yX0DZ" style="margin-bottom:16px;"></div>
                 <button type="submit" class="form-submit" id="form-submit-btn">Send Inquiry</button>
             </form>
         </div>
@@ -770,36 +769,23 @@ export default {
     const url = new URL(request.url);
     const path = url.pathname;
 
-    // Blog
     if (path === "/blog" || path === "/blog/") {
-      return new Response(BLOG_HTML, {
-        headers: { "Content-Type": "text/html; charset=utf-8" }
-      });
+      return new Response(BLOG_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
     }
 
-    // API: form submission
     if (path === "/api/inquiry" && request.method === "POST") {
       return handleInquiry(request, env);
     }
 
-    // Logo SVG
     if (path === "/images/logo.svg") {
-      return new Response(LOGO_SVG, {
-        headers: { "Content-Type": "image/svg+xml", "Cache-Control": "public, max-age=86400" }
-      });
+      return new Response(LOGO_SVG, { headers: { "Content-Type": "image/svg+xml", "Cache-Control": "public, max-age=86400" } });
     }
 
-    // Robots.txt
     if (path === "/robots.txt") {
-      return new Response("User-agent: *\nAllow: /\nSitemap: https://welllocks.com/sitemap.xml", {
-        headers: { "Content-Type": "text/plain", "Cache-Control": "public, max-age=86400" }
-      });
+      return new Response("User-agent: *\nAllow: /\nSitemap: https://welllocks.com/sitemap.xml", { headers: { "Content-Type": "text/plain" } });
     }
 
-    // Default: serve index.html
-    return new Response(HTML, {
-      headers: { "Content-Type": "text/html; charset=utf-8" }
-    });
+    return new Response(HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
   }
 };
 
@@ -814,7 +800,6 @@ async function handleInquiry(request, env) {
   }
 
   const { name, company, email, message } = body;
-
   if (!name || !email || !message) {
     return Response.json({ success: false, error: "Name, email, and message are required." }, { status: 400 });
   }
@@ -822,7 +807,6 @@ async function handleInquiry(request, env) {
     return Response.json({ success: false, error: "Invalid email address." }, { status: 400 });
   }
 
-  // Turnstile verification (skip if no secret configured)
   if (env.TURNSTILE_SECRET_KEY) {
     const token = body["cf-turnstile-response"];
     if (!token) {
@@ -840,7 +824,7 @@ async function handleInquiry(request, env) {
       }
     } catch (e) {
       console.error("Turnstile:", e);
-      return Response.json({ success: false, error: "Verification error. Please try again." }, { status: 500 });
+      return Response.json({ success: false, error: "Verification error." }, { status: 500 });
     }
   }
 

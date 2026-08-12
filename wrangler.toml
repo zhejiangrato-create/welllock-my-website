@@ -4,6 +4,4 @@ compatibility_date = "2025-08-12"
 
 [vars]
 RECIPIENT_EMAIL = "zhejiangrato@gmail.com"
-
-# Turnstile: create site at https://dash.cloudflare.com/?to=/:account/turnstile
-# TURNSTILE_SECRET_KEY = "your-secret-key"
+TURNSTILE_SECRET_KEY = "0x4AAAAAAENoOt8q_Mg_wlzsoZqE45uDOVg"
