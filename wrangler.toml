@@ -1,0 +1,16 @@
+name = "welllocks"
+compatibility_date = "2025-08-12"
+
+# Cloudflare Pages configuration
+pages_build_output_dir = "."
+
+[vars]
+# Set these in Cloudflare Dashboard → Workers & Pages → welllocks → Settings → Variables
+# or via: wrangler secret put RESEND_API_KEY
+SITE_NAME = "WellLock"
+RECIPIENT_EMAIL = "zhejiangrato@gmail.com"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/api/:splat"
+  status = 200
