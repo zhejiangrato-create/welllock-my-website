@@ -1,4 +1,4 @@
-// WellLock Worker — serves static site + API
+// WellLock Worker v2 — products, turnstile, blog
 const HTML = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -262,9 +262,12 @@ const HTML = `<!DOCTYPE html>
         /* ===== 产品展示 ===== */
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 24px;
             margin-top: 32px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .product-item {
@@ -422,6 +425,7 @@ const HTML = `<!DOCTYPE html>
             }
             .product-grid {
                 grid-template-columns: repeat(2, 1fr);
+                max-width: 600px;
             }
         }
 
@@ -456,8 +460,8 @@ const HTML = `<!DOCTYPE html>
                 gap: 24px;
             }
             .product-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 16px;
+                grid-template-columns: 1fr;
+                max-width: 320px;
             }
             .form-row {
                 grid-template-columns: 1fr;
@@ -466,10 +470,7 @@ const HTML = `<!DOCTYPE html>
 
         @media (max-width: 480px) {
             .product-grid {
-                grid-template-columns: 1fr;
                 max-width: 280px;
-                margin-left: auto;
-                margin-right: auto;
             }
             .btn-group {
                 flex-direction: column;
@@ -500,6 +501,7 @@ const HTML = `<!DOCTYPE html>
             <nav>
                 <a href="#about">About</a>
                 <a href="#products">Products</a>
+                <a href="/blog">Blog</a>
                 <a href="#inquiry" class="nav-cta">Get a Quote</a>
             </nav>
         </div>
@@ -554,27 +556,21 @@ const HTML = `<!DOCTYPE html>
 
             <div class="product-grid">
                 <div class="product-item">
-                    <img src="images/products/product-01.jpg" alt="Brass Padlock" class="image-box" style="object-fit:cover;" />
-                    <h4>Brass Padlock</h4>
-                    <p>40mm hardened, mirror polish</p>
+                    <img src="https://www.nbrato.com/data/watermark/20180911/5b978c4796d8c.jpg" alt="T Handle Lock" class="image-box" style="object-fit:cover;" />
+                    <h4>T Handle Lock</h4>
+                    <p>Zinc alloy, chrome plated — for cabinets & RV doors</p>
                     <a href="#inquiry" class="btn-small">Inquire</a>
                 </div>
                 <div class="product-item">
-                    <img src="images/products/product-02.jpg" alt="Combination Padlock" class="image-box" style="object-fit:cover;" />
-                    <h4>Combination Padlock</h4>
-                    <p>70mm stainless steel disc</p>
+                    <img src="https://www.nbrato.com/data/watermark/20240507/6639d7745f7cb.jpg" alt="Combination Brass Padlock" class="image-box" style="object-fit:cover;" />
+                    <h4>Combination Brass Padlock</h4>
+                    <p>Solid brass body, 4-digit resettable code</p>
                     <a href="#inquiry" class="btn-small">Inquire</a>
                 </div>
                 <div class="product-item">
-                    <img src="images/products/product-03.jpg" alt="TSA Travel Lock" class="image-box" style="object-fit:cover;" />
-                    <h4>TSA Travel Lock</h4>
-                    <p>TSA-approved, zinc alloy</p>
-                    <a href="#inquiry" class="btn-small">Inquire</a>
-                </div>
-                <div class="product-item">
-                    <img src="images/products/product-04.jpg" alt="Electronic Padlock" class="image-box" style="object-fit:cover;" />
-                    <h4>Smart Padlock</h4>
-                    <p>Fingerprint & Bluetooth</p>
+                    <img src="https://www.nbrato.com/data/watermark/20180912/5b98d3ef213f1.jpg" alt="Industrial Paddle Lock" class="image-box" style="object-fit:cover;" />
+                    <h4>Industrial Paddle Lock</h4>
+                    <p>Heavy-duty, for telecom & electrical cabinets</p>
                     <a href="#inquiry" class="btn-small">Inquire</a>
                 </div>
             </div>
@@ -614,6 +610,7 @@ const HTML = `<!DOCTYPE html>
                     <textarea name="message" placeholder="Tell us what you need — product, quantity, specifications..."></textarea>
                 </div>
                 <div id="form-status" style="display:none;margin-bottom:16px;padding:12px;border-radius:6px;font-size:14px;"></div>
+                <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITE_KEY" style="margin-bottom:16px;"></div>
                 <button type="submit" class="form-submit" id="form-submit-btn">Send Inquiry</button>
             </form>
         </div>
@@ -656,6 +653,7 @@ const HTML = `<!DOCTYPE html>
     </footer>
 
     <!-- ===== 表单提交脚本 ===== -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <script>
     document.getElementById('inquiry-form').addEventListener('submit', async function(e) {
         e.preventDefault();
@@ -663,15 +661,28 @@ const HTML = `<!DOCTYPE html>
         const status = document.getElementById('form-status');
         const formData = new FormData(this);
 
+        // Get Turnstile token
+        const turnstileToken = document.querySelector('.cf-turnstile [name="cf-turnstile-response"]')?.value;
+        if (!turnstileToken) {
+            status.style.display = 'block';
+            status.style.background = '#fce4ec';
+            status.style.color = '#c62828';
+            status.textContent = '✗ Please complete the verification.';
+            return;
+        }
+
         btn.disabled = true;
         btn.textContent = 'Sending...';
         status.style.display = 'none';
+
+        const payload = Object.fromEntries(formData.entries());
+        payload['cf-turnstile-response'] = turnstileToken;
 
         try {
             const res = await fetch('/api/inquiry', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(Object.fromEntries(formData.entries()))
+                body: JSON.stringify(payload)
             });
             const data = await res.json();
 
@@ -681,6 +692,7 @@ const HTML = `<!DOCTYPE html>
                 status.style.color = '#2e7d32';
                 status.textContent = '✓ ' + data.message;
                 this.reset();
+                if (window.turnstile) turnstile.reset();
             } else {
                 status.style.background = '#fce4ec';
                 status.style.color = '#c62828';
@@ -725,19 +737,45 @@ const LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" w
   </text>
 </svg>
 `;
-
-// Product images (served from nbrato.com CDN)
-const PRODUCT_IMAGES = {
-  "product-01.jpg": "https://www.nbrato.com/data/upload/20180814/5b72b0fb5d92b.jpg",
-  "product-02.jpg": "https://www.nbrato.com/data/upload/20180814/5b72b11887aa0.jpg",
-  "product-03.jpg": "https://www.nbrato.com/data/upload/20180814/5b72b144da28e.jpg",
-  "product-04.jpg": "https://www.nbrato.com/data/upload/20180814/5b72b157b0f6b.jpg",
-};
+const BLOG_HTML = `<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#fafafa;color:#1a1a1a;line-height:1.6}
+  .blog-header{background:#1a1a1a;padding:24px 0}
+  .blog-header .container{max-width:1000px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+  .blog-header a{color:#fff;text-decoration:none;font-weight:600;font-size:14px}
+  .blog-header a:hover{color:#c9a84c}
+  .blog-main{max-width:800px;margin:0 auto;padding:60px 24px}
+  .blog-main h1{font-size:32px;font-weight:700;margin-bottom:8px}
+  .blog-main .sub{color:#888;margin-bottom:40px}
+  .empty-state{text-align:center;padding:80px 20px;background:#fff;border-radius:8px;border:1px solid #eaeaea}
+  .empty-state svg{width:80px;height:80px;color:#ccc;margin-bottom:16px}
+  .empty-state h2{font-size:20px;color:#333;margin-bottom:8px}
+  .empty-state p{color:#999;font-size:14px}
+  footer{text-align:center;padding:32px;color:#999;font-size:13px}
+</style>
+<div class="blog-header"><div class="container"><a href="/">WellLock</a><a href="/#inquiry">Inquiry</a></div></div>
+<div class="blog-main">
+  <h1>Blog</h1>
+  <p class="sub">Industry insights, product guides, and company updates.</p>
+  <div class="empty-state">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg>
+    <h2>Coming Soon</h2>
+    <p>We're working on our first articles. Check back soon for insights on lock manufacturing, industry trends, and product guides.</p>
+  </div>
+</div>
+<footer>&copy; 2026 NINGBO RATO HARDWARE CO.,LTD</footer>`;
 
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     const path = url.pathname;
+
+    // Blog
+    if (path === "/blog" || path === "/blog/") {
+      return new Response(BLOG_HTML, {
+        headers: { "Content-Type": "text/html; charset=utf-8" }
+      });
+    }
 
     // API: form submission
     if (path === "/api/inquiry" && request.method === "POST") {
@@ -751,12 +789,6 @@ export default {
       });
     }
 
-    // Product images — redirect to nbrato.com CDN
-    const imgMatch = path.match(/^\/images\/products\/(.+)$/);
-    if (imgMatch && PRODUCT_IMAGES[imgMatch[1]]) {
-      return Response.redirect(PRODUCT_IMAGES[imgMatch[1]], 301);
-    }
-
     // Robots.txt
     if (path === "/robots.txt") {
       return new Response("User-agent: *\nAllow: /\nSitemap: https://welllocks.com/sitemap.xml", {
@@ -764,7 +796,7 @@ export default {
       });
     }
 
-    // All other routes → serve index.html
+    // Default: serve index.html
     return new Response(HTML, {
       headers: { "Content-Type": "text/html; charset=utf-8" }
     });
@@ -782,17 +814,39 @@ async function handleInquiry(request, env) {
   }
 
   const { name, company, email, message } = body;
+
   if (!name || !email || !message) {
     return Response.json({ success: false, error: "Name, email, and message are required." }, { status: 400 });
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return Response.json({ success: false, error: "Invalid email." }, { status: 400 });
+    return Response.json({ success: false, error: "Invalid email address." }, { status: 400 });
+  }
+
+  // Turnstile verification (skip if no secret configured)
+  if (env.TURNSTILE_SECRET_KEY) {
+    const token = body["cf-turnstile-response"];
+    if (!token) {
+      return Response.json({ success: false, error: "Verification required." }, { status: 400 });
+    }
+    try {
+      const v = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({ secret: env.TURNSTILE_SECRET_KEY, response: token }).toString()
+      });
+      const r = await v.json();
+      if (!r.success) {
+        return Response.json({ success: false, error: "Verification failed. Please try again." }, { status: 400 });
+      }
+    } catch (e) {
+      console.error("Turnstile:", e);
+      return Response.json({ success: false, error: "Verification error. Please try again." }, { status: 500 });
+    }
   }
 
   const ts = new Date().toISOString();
   const subject = `[WellLock] ${name} — ${company || "N/A"}`;
 
-  // Email via Resend
   if (env.RESEND_API_KEY) {
     await fetch("https://api.resend.com/emails", {
       method: "POST",

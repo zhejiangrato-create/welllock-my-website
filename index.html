@@ -261,9 +261,12 @@
         /* ===== 产品展示 ===== */
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 24px;
             margin-top: 32px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .product-item {
@@ -421,6 +424,7 @@
             }
             .product-grid {
                 grid-template-columns: repeat(2, 1fr);
+                max-width: 600px;
             }
         }
 
@@ -455,8 +459,8 @@
                 gap: 24px;
             }
             .product-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 16px;
+                grid-template-columns: 1fr;
+                max-width: 320px;
             }
             .form-row {
                 grid-template-columns: 1fr;
@@ -465,10 +469,7 @@
 
         @media (max-width: 480px) {
             .product-grid {
-                grid-template-columns: 1fr;
                 max-width: 280px;
-                margin-left: auto;
-                margin-right: auto;
             }
             .btn-group {
                 flex-direction: column;
@@ -499,6 +500,7 @@
             <nav>
                 <a href="#about">About</a>
                 <a href="#products">Products</a>
+                <a href="/blog">Blog</a>
                 <a href="#inquiry" class="nav-cta">Get a Quote</a>
             </nav>
         </div>
@@ -553,27 +555,21 @@
 
             <div class="product-grid">
                 <div class="product-item">
-                    <img src="images/products/product-01.jpg" alt="Brass Padlock" class="image-box" style="object-fit:cover;" />
-                    <h4>Brass Padlock</h4>
-                    <p>40mm hardened, mirror polish</p>
+                    <img src="https://www.nbrato.com/data/watermark/20180911/5b978c4796d8c.jpg" alt="T Handle Lock" class="image-box" style="object-fit:cover;" />
+                    <h4>T Handle Lock</h4>
+                    <p>Zinc alloy, chrome plated — for cabinets & RV doors</p>
                     <a href="#inquiry" class="btn-small">Inquire</a>
                 </div>
                 <div class="product-item">
-                    <img src="images/products/product-02.jpg" alt="Combination Padlock" class="image-box" style="object-fit:cover;" />
-                    <h4>Combination Padlock</h4>
-                    <p>70mm stainless steel disc</p>
+                    <img src="https://www.nbrato.com/data/watermark/20240507/6639d7745f7cb.jpg" alt="Combination Brass Padlock" class="image-box" style="object-fit:cover;" />
+                    <h4>Combination Brass Padlock</h4>
+                    <p>Solid brass body, 4-digit resettable code</p>
                     <a href="#inquiry" class="btn-small">Inquire</a>
                 </div>
                 <div class="product-item">
-                    <img src="images/products/product-03.jpg" alt="TSA Travel Lock" class="image-box" style="object-fit:cover;" />
-                    <h4>TSA Travel Lock</h4>
-                    <p>TSA-approved, zinc alloy</p>
-                    <a href="#inquiry" class="btn-small">Inquire</a>
-                </div>
-                <div class="product-item">
-                    <img src="images/products/product-04.jpg" alt="Electronic Padlock" class="image-box" style="object-fit:cover;" />
-                    <h4>Smart Padlock</h4>
-                    <p>Fingerprint & Bluetooth</p>
+                    <img src="https://www.nbrato.com/data/watermark/20180912/5b98d3ef213f1.jpg" alt="Industrial Paddle Lock" class="image-box" style="object-fit:cover;" />
+                    <h4>Industrial Paddle Lock</h4>
+                    <p>Heavy-duty, for telecom & electrical cabinets</p>
                     <a href="#inquiry" class="btn-small">Inquire</a>
                 </div>
             </div>
@@ -613,6 +609,7 @@
                     <textarea name="message" placeholder="Tell us what you need — product, quantity, specifications..."></textarea>
                 </div>
                 <div id="form-status" style="display:none;margin-bottom:16px;padding:12px;border-radius:6px;font-size:14px;"></div>
+                <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITE_KEY" style="margin-bottom:16px;"></div>
                 <button type="submit" class="form-submit" id="form-submit-btn">Send Inquiry</button>
             </form>
         </div>
@@ -655,6 +652,7 @@
     </footer>
 
     <!-- ===== 表单提交脚本 ===== -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <script>
     document.getElementById('inquiry-form').addEventListener('submit', async function(e) {
         e.preventDefault();
@@ -662,15 +660,28 @@
         const status = document.getElementById('form-status');
         const formData = new FormData(this);
 
+        // Get Turnstile token
+        const turnstileToken = document.querySelector('.cf-turnstile [name="cf-turnstile-response"]')?.value;
+        if (!turnstileToken) {
+            status.style.display = 'block';
+            status.style.background = '#fce4ec';
+            status.style.color = '#c62828';
+            status.textContent = '✗ Please complete the verification.';
+            return;
+        }
+
         btn.disabled = true;
         btn.textContent = 'Sending...';
         status.style.display = 'none';
+
+        const payload = Object.fromEntries(formData.entries());
+        payload['cf-turnstile-response'] = turnstileToken;
 
         try {
             const res = await fetch('/api/inquiry', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(Object.fromEntries(formData.entries()))
+                body: JSON.stringify(payload)
             });
             const data = await res.json();
 
@@ -680,6 +691,7 @@
                 status.style.color = '#2e7d32';
                 status.textContent = '✓ ' + data.message;
                 this.reset();
+                if (window.turnstile) turnstile.reset();
             } else {
                 status.style.background = '#fce4ec';
                 status.style.color = '#c62828';
