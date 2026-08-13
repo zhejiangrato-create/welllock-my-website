@@ -1,3 +1,21 @@
+# Allow AI / generative-engine crawlers explicitly (GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# All other crawlers
 User-agent: *
 Allow: /
+
 Sitemap: https://welllocks.com/sitemap.xml
