@@ -20,7 +20,7 @@ Five common applications:
 2. **RV and camper doors** — must withstand constant vibration and weather exposure.
 3. **Truck and service body doors** — dust, vibration, and heavy everyday use.
 4. **Trailers** — enclosed trailers and semi-trailer doors.
-5. **Fire doors, entrance doors and through-gates** — where a robust keyed handle is required.
+5. **Utility and industrial cabinets** — surface-mounted keyed handles on tool boxes and equipment cabinets.
 
 ## 4 Things to Check Before You Buy
 
@@ -39,7 +39,7 @@ The body of a durable T handle lock is die-cast **zinc alloy**. It is strong, ru
 
 ### 3. Surface finish — chrome vs. powder-coated black
 
-- **Chrome plated** — bright and corrosion-resistant. Good for residential garage doors and entrance doors where appearance matters. Salt-spray tested to 24 hours.
+- **Chrome plated** — bright and corrosion-resistant. Good for garage doors where appearance matters. Salt-spray tested to 24 hours.
 - **Powder-coated black** — matte finish. Better for industrial and heavy-duty use where scratches and grime are expected (truck doors, service bodies). Salt-spray tested to 72 hours.
 
 ### 4. Keying — KA vs. KD

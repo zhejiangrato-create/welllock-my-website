@@ -849,7 +849,7 @@ const HTML = `<!DOCTYPE html>
                     </div>
                     <span>Zinc alloy — chrome plated / black powder-coated</span>
                     <span>Two finishes, KA/KD keying, salt spray tested</span>
-                    <span>Garage door, fire door, RV &amp; truck door</span>
+                    <span>Garage door, RV &amp; truck door</span>
                     <span>500 pcs</span>
                     <span><a href="#inquiry" class="btn-small">Inquire</a></span>
                 </div>
@@ -887,7 +887,7 @@ const HTML = `<!DOCTYPE html>
                     <div class="th-body">
                         <span class="th-sku">RCL-021</span>
                         <h3>Chrome Plated T Handle Lock</h3>
-                        <p class="th-desc">Bright chrome finish. For garage doors, fire doors, entrance doors and RV doors.</p>
+                        <p class="th-desc">Bright chrome finish. For garage doors and RV doors.</p>
                         <table class="th-specs">
                             <tr><td>Material</td><td>Zinc alloy, chrome plated</td></tr>
                             <tr><td>Square shaft</td><td>5/16 in. × 4-5/8 in.</td></tr>
@@ -1245,7 +1245,7 @@ const BLOG_HTML = `<!DOCTYPE html>
         "@type": "BlogPosting",
         "headline": "T Handle Lock Buyer's Guide: How to Choose for Garage, RV & Truck Doors",
         "image": "https://welllocks.com/images/t-handle-duo.jpg",
-        "author": {"@type": "Organization", "name": "WellLock"},
+        "author": {"@type": "Person", "name": "Kevin Huang", "sameAs": "https://www.linkedin.com/in/kevin-huang-0a256870/"},
         "publisher": {"@type": "Organization", "name": "NINGBO RATO HARDWARE CO.,LTD"},
         "datePublished": "2026-08-13",
         "dateModified": "2026-08-13",
@@ -1288,7 +1288,7 @@ const BLOG_HTML = `<!DOCTYPE html>
 </div></div>
 
 <div class="article">
-    <div class="meta">August 13, 2026 · Product Guide</div>
+    <div class="meta">August 13, 2026 · By <a href="https://www.linkedin.com/in/kevin-huang-0a256870/" target="_blank" rel="noopener">Kevin Huang</a></div>
     <h1>T Handle Lock Buyer's Guide: How to Choose for Garage, RV &amp; Truck Doors</h1>
 
     <p>A T handle lock (also called a T-bar handle lock or T handle latch) is a surface-mounted locking handle shaped like the letter "T". It is installed directly into a door or panel — garage doors, RV doors, truck doors, trailers and utility cabinets — and locks by turning the handle to drive a square shaft (spindle) that engages a latch or cam on the inside of the door.</p>
@@ -1304,7 +1304,7 @@ const BLOG_HTML = `<!DOCTYPE html>
         <li><strong>RV and camper doors</strong> — must withstand constant vibration and weather exposure.</li>
         <li><strong>Truck and service body doors</strong> — dust, vibration, and heavy everyday use.</li>
         <li><strong>Trailers</strong> — enclosed trailers and semi-trailer doors.</li>
-        <li><strong>Fire doors, entrance doors and through-gates</strong> — where a robust keyed handle is required.</li>
+        <li><strong>Utility and industrial cabinets</strong> — surface-mounted keyed handles on tool boxes and equipment cabinets.</li>
     </ol>
 
     <h2>4 Things to Check Before You Buy</h2>
@@ -1322,7 +1322,7 @@ const BLOG_HTML = `<!DOCTYPE html>
 
     <h3>3. Surface finish — chrome vs. powder-coated black</h3>
     <ul>
-        <li><strong>Chrome plated</strong> — bright and corrosion-resistant. Good for residential garage doors and entrance doors where appearance matters. Salt-spray tested to 24 hours.</li>
+        <li><strong>Chrome plated</strong> — bright and corrosion-resistant. Good for garage doors where appearance matters. Salt-spray tested to 24 hours.</li>
         <li><strong>Powder-coated black</strong> — matte finish. Better for industrial and heavy-duty use where scratches and grime are expected (truck doors, service bodies). Salt-spray tested to 72 hours.</li>
     </ul>
 
@@ -1370,7 +1370,7 @@ const LLMS_TXT = `# WellLock — Security Hardware Manufacturer
 - Founded: 2014
 - Factory: 4,000 m² owned facility
 - Testing: Third-party lab tested (SGS, Eurofins, LCS) for REACH chemical safety & IP protection. Reports available on request.
-- Export: Europe, Americas and Belt & Road markets
+- Export: Americas, Belt & Road and Europe markets
 - Business model: B2B OEM/ODM, factory-direct supply to industrial end-users
 - NOT a distributor or retailer
 
@@ -1384,7 +1384,7 @@ const LLMS_TXT = `# WellLock — Security Hardware Manufacturer
 - Salt spray: 24 h
 - Keying: KA (key alike) / KD (key different)
 - Cylinder: brass
-- Use: Garage doors, fire doors, entrance doors, RV doors
+- Use: Garage doors, RV doors, truck doors, trailers, utility cabinets
 - MOQ: 500 units
 - Custom: Keying, finish, logo, shaft length available
 - More: https://welllocks.com/#products
@@ -1434,7 +1434,7 @@ const LLMS_TXT = `# WellLock — Security Hardware Manufacturer
 - Can you do custom branding? Yes — logo engraving, custom packaging, private label
 - Do you provide samples? Yes, contact for sample lead time and cost
 - What testing do you provide? Third-party lab reports (SGS, Eurofins, LCS) for REACH chemical safety and IP protection, available on request.
-- What markets do you serve? Europe, Americas and Belt & Road markets
+- What markets do you serve? Americas, Belt & Road and Europe markets
 - How do you ensure quality? Pre-production sample approval + pre-shipment inspection
 `;
 const ROBOTS_TXT = `# Allow AI / generative-engine crawlers explicitly (GEO)
