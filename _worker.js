@@ -457,6 +457,39 @@ const HTML = `<!DOCTYPE html>
             margin-bottom: 4px;
         }
 
+        /* ===== 合规检测区块 ===== */
+        .compliance-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .compliance-item {
+            background: #fff;
+            border: 1px solid #eaeaea;
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .compliance-item .comp-icon {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .compliance-item h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .compliance-item p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.6;
+        }
+
         /* ===== 规格对比表 ===== */
         .spec-table {
             border: 1px solid #eaeaea;
@@ -656,6 +689,9 @@ const HTML = `<!DOCTYPE html>
             .factory-grid {
                 grid-template-columns: 1fr;
             }
+            .compliance-grid {
+                grid-template-columns: 1fr;
+            }
             .form-row {
                 grid-template-columns: 1fr;
             }
@@ -763,6 +799,33 @@ const HTML = `<!DOCTYPE html>
                         <strong>Finished goods warehouse</strong>
                         Ready-to-ship inventory of padlocks, T handle locks and cabinet locks for export.
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 合规检测 ===== -->
+    <section class="section" id="compliance">
+        <div class="container">
+            <p class="section-label">Compliance &amp; Testing</p>
+            <h2>Tested by <strong>independent labs</strong></h2>
+            <p class="lead">We submit samples to third-party laboratories for chemical safety and physical performance. Full test reports are available on request.</p>
+
+            <div class="compliance-grid">
+                <div class="compliance-item">
+                    <div class="comp-icon">🧪</div>
+                    <h3>Chemical safety (REACH)</h3>
+                    <p>Cadmium, lead and phthalates tested by independent labs — SGS and Eurofins. All test items passed.</p>
+                </div>
+                <div class="compliance-item">
+                    <div class="comp-icon">💧</div>
+                    <h3>IP56 protection</h3>
+                    <p>Dust (IP5X) and high-pressure water jet (IPX6) resistance tested to IEC 60529 by LCS. No ingress.</p>
+                </div>
+                <div class="compliance-item">
+                    <div class="comp-icon">📄</div>
+                    <h3>Reports on request</h3>
+                    <p>Ask for the full third-party test reports before you order — we'll share them for the specific product you need.</p>
                 </div>
             </div>
         </div>
@@ -1196,7 +1259,7 @@ const LLMS_TXT = `# WellLock — Security Hardware Manufacturer
 - Website: https://welllocks.com
 - Founded: 2014
 - Factory: 4,000 m² owned facility
-- Certifications: CE, ROHS (certificate numbers available on request)
+- Testing: Third-party lab tested (SGS, Eurofins, LCS) for REACH chemical safety & IP protection. Reports available on request.
 - Export: 50+ countries
 - Business model: B2B OEM/ODM, factory-direct supply to industrial end-users
 - NOT a distributor or retailer
@@ -1260,7 +1323,7 @@ const LLMS_TXT = `# WellLock — Security Hardware Manufacturer
 - Minimum order quantity? Typically 500 units per SKU
 - Can you do custom branding? Yes — logo engraving, custom packaging, private label
 - Do you provide samples? Yes, contact for sample lead time and cost
-- What certifications do you have? CE, ROHS
+- What testing do you provide? Third-party lab reports (SGS, Eurofins, LCS) for REACH chemical safety and IP protection, available on request.
 - What markets do you serve? 50+ countries, focus on Belt & Road, Europe, Americas
 - How do you ensure quality? Pre-production sample approval + pre-shipment inspection
 `;
