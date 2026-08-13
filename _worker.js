@@ -1224,33 +1224,142 @@ const LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" w
   </text>
 </svg>
 `;
-const BLOG_HTML = `<style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#fafafa;color:#1a1a1a;line-height:1.6}
-  .blog-header{background:#1a1a1a;padding:24px 0}
-  .blog-header .container{max-width:1000px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
-  .blog-header a{color:#fff;text-decoration:none;font-weight:600;font-size:14px}
-  .blog-header a:hover{color:#c9a84c}
-  .blog-main{max-width:800px;margin:0 auto;padding:60px 24px}
-  .blog-main h1{font-size:32px;font-weight:700;margin-bottom:8px}
-  .blog-main .sub{color:#888;margin-bottom:40px}
-  .empty-state{text-align:center;padding:80px 20px;background:#fff;border-radius:8px;border:1px solid #eaeaea}
-  .empty-state svg{width:80px;height:80px;color:#ccc;margin-bottom:16px}
-  .empty-state h2{font-size:20px;color:#333;margin-bottom:8px}
-  .empty-state p{color:#999;font-size:14px}
-  footer{text-align:center;padding:32px;color:#999;font-size:13px}
-</style>
-<div class="blog-header"><div class="container"><a href="/">WellLock</a><a href="/#inquiry">Inquiry</a></div></div>
-<div class="blog-main">
-  <h1>Blog</h1>
-  <p class="sub">Industry insights, product guides, and company updates.</p>
-  <div class="empty-state">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg>
-    <h2>Coming Soon</h2>
-    <p>We're working on our first articles. Check back soon for insights on lock manufacturing, industry trends, and product guides.</p>
-  </div>
+const BLOG_HTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T Handle Lock Buyer's Guide: Shaft Size, Material & Keying | WellLock</title>
+    <meta name="description" content="How to choose a T handle lock — square shaft length, chrome vs powder-coated finish, KA/KD keying. A practical buyer's guide for garage, RV and truck doors." />
+    <link rel="canonical" href="https://welllocks.com/blog/t-handle-lock-buyers-guide" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="T Handle Lock Buyer's Guide: Shaft Size, Material & Keying | WellLock" />
+    <meta property="og:description" content="How to choose a T handle lock — square shaft length, chrome vs powder-coated finish, KA/KD keying." />
+    <meta property="og:image" content="https://welllocks.com/images/t-handle-duo.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "T Handle Lock Buyer's Guide: How to Choose for Garage, RV & Truck Doors",
+        "image": "https://welllocks.com/images/t-handle-duo.jpg",
+        "author": {"@type": "Organization", "name": "WellLock"},
+        "publisher": {"@type": "Organization", "name": "NINGBO RATO HARDWARE CO.,LTD"},
+        "datePublished": "2026-08-13",
+        "dateModified": "2026-08-13",
+        "mainEntityOfPage": "https://welllocks.com/blog/t-handle-lock-buyers-guide"
+    }
+    </script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#fff;color:#1a1a1a;line-height:1.7}
+        .blog-header{background:#1a1a1a;padding:20px 0;border-bottom:3px solid #c9a84c}
+        .blog-header .container{max-width:800px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+        .blog-header a{color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+        .blog-header a:hover{color:#c9a84c}
+        .blog-header .logo{display:flex;align-items:center;gap:10px}
+        .blog-header .logo span{color:#fff;font-weight:700;letter-spacing:.5px}
+        .blog-header .logo span em{color:#c9a84c;font-style:normal}
+        .article{max-width:800px;margin:0 auto;padding:48px 24px}
+        .article .meta{color:#888;font-size:13px;margin-bottom:8px}
+        h1{font-size:32px;font-weight:700;line-height:1.25;margin-bottom:20px}
+        h2{font-size:22px;font-weight:700;margin:36px 0 14px;padding-top:20px;border-top:1px solid #eaeaea}
+        h3{font-size:17px;font-weight:600;margin:24px 0 10px}
+        p{margin-bottom:16px;font-size:16px}
+        ul,ol{margin:0 0 16px 24px}
+        li{margin-bottom:8px;font-size:16px}
+        .article img{max-width:100%;height:auto;border-radius:12px;margin:24px 0;border:1px solid #eaeaea}
+        .callout{background:#fafafa;border-left:4px solid #c9a84c;padding:20px;border-radius:0 8px 8px 0;margin:32px 0}
+        .callout h3{margin-top:0}
+        .cta{background:#1a1a1a;color:#fff;padding:24px;border-radius:12px;margin:40px 0;text-align:center}
+        .cta p{color:#ccc;margin-bottom:16px}
+        .cta a{display:inline-block;background:#c9a84c;color:#1a1a1a;padding:12px 32px;border-radius:30px;text-decoration:none;font-weight:700;font-size:15px}
+        .cta a:hover{background:#d8b95e}
+        footer{text-align:center;padding:32px;color:#999;font-size:13px;border-top:1px solid #eaeaea}
+        @media(max-width:600px){h1{font-size:26px}h2{font-size:20px}}
+    </style>
+</head>
+<body>
+<div class="blog-header"><div class="container">
+    <a class="logo" href="/"><span>Well<em>Lock</em></span></a>
+    <a href="/#inquiry">Inquiry</a>
+</div></div>
+
+<div class="article">
+    <div class="meta">August 13, 2026 · Product Guide</div>
+    <h1>T Handle Lock Buyer's Guide: How to Choose for Garage, RV &amp; Truck Doors</h1>
+
+    <p>A T handle lock (also called a T-bar handle lock or T handle latch) is a surface-mounted locking handle shaped like the letter "T". It is installed directly into a door or panel — garage doors, RV doors, truck doors, trailers and utility cabinets — and locks by turning the handle to drive a square shaft (spindle) that engages a latch or cam on the inside of the door.</p>
+
+    <p>Unlike a padlock, which is portable and used to secure a hasp, a T handle lock is a permanent piece of door hardware. It replaces the door's original handle and combines the handle function and the locking function in one unit.</p>
+
+    <img src="/images/t-handle-duo.jpg" alt="T handle lock — chrome plated and powder-coated black finishes, square shaft, for garage door RV truck door" />
+
+    <h2>Where T Handle Locks Are Used</h2>
+    <p>Five common applications:</p>
+    <ol>
+        <li><strong>Garage doors</strong> — residential and commercial, where the T handle drives the locking bars on the inside of the door.</li>
+        <li><strong>RV and camper doors</strong> — must withstand constant vibration and weather exposure.</li>
+        <li><strong>Truck and service body doors</strong> — dust, vibration, and heavy everyday use.</li>
+        <li><strong>Trailers</strong> — enclosed trailers and semi-trailer doors.</li>
+        <li><strong>Fire doors, entrance doors and through-gates</strong> — where a robust keyed handle is required.</li>
+    </ol>
+
+    <h2>4 Things to Check Before You Buy</h2>
+
+    <h3>1. Square shaft length — the #1 cause of wrong orders</h3>
+    <p>The square shaft (spindle) is the rod that passes through the door and drives the latch. It must be long enough to pass through your door thickness plus the latch mechanism, with enough left to engage properly.</p>
+    <ul>
+        <li>Common sizes: 5/16 in. × 4-5/8 in. (about 8 mm × 118 mm), or longer 127 mm shafts for thicker doors.</li>
+        <li>If the shaft is too short, the lock won't engage. If it is too long, it can usually be cut to size — but confirm this with your supplier first.</li>
+    </ul>
+    <p>Always measure your door thickness and the depth of your latch before ordering.</p>
+
+    <h3>2. Material — zinc alloy</h3>
+    <p>The body of a durable T handle lock is die-cast <strong>zinc alloy</strong>. It is strong, rust-resistant when plated or coated, and holds up to outdoor weather, vibration and temperature changes — the conditions garage, RV and truck doors face every day.</p>
+
+    <h3>3. Surface finish — chrome vs. powder-coated black</h3>
+    <ul>
+        <li><strong>Chrome plated</strong> — bright and corrosion-resistant. Good for residential garage doors and entrance doors where appearance matters. Salt-spray tested to 24 hours.</li>
+        <li><strong>Powder-coated black</strong> — matte finish. Better for industrial and heavy-duty use where scratches and grime are expected (truck doors, service bodies). Salt-spray tested to 72 hours.</li>
+    </ul>
+
+    <h3>4. Keying — KA vs. KD</h3>
+    <ul>
+        <li><strong>KA (Keyed Alike)</strong> — all locks open with the same key. Ideal for fleets or multiple doors managed by one person.</li>
+        <li><strong>KD (Keyed Different)</strong> — each lock has its own key. Better when different people need separate access.</li>
+    </ul>
+    <p>A good supplier offers both. If you manage a fleet of trucks or lockers, KA keying can save a lot of key management.</p>
+
+    <h2>Common Problems &amp; How to Avoid Them</h2>
+    <ul>
+        <li><strong>Rust seizing the lock</strong> → choose zinc alloy with plating or powder coating, plus a salt-spray test.</li>
+        <li><strong>Shaft too short</strong> → measure your door thickness and latch depth before ordering.</li>
+        <li><strong>Lost keys, poor key management</strong> → order KA (keyed alike) for fleet use.</li>
+        <li><strong>Vibration loosening (RV/truck)</strong> → full-metal construction.</li>
+    </ul>
+
+    <h2>Why OEM Buyers Should Check the Supplier, Not Just the Price</h2>
+    <p>For a door factory or vehicle builder buying T handle locks in bulk, the lock is a component in <em>your</em> product. A failed lock becomes a warranty claim on your product. Before ordering, confirm:</p>
+    <ul>
+        <li>Is the body zinc alloy?</li>
+        <li>What shaft lengths and finishes are available?</li>
+        <li>Can they do KA/KD keying and custom logo?</li>
+        <li>What is the MOQ and sample lead time?</li>
+    </ul>
+    <p>A factory that answers these clearly — with real specifications, not marketing language — is the one to work with.</p>
+
+    <div class="cta">
+        <p>Need T handle locks for your doors? We'll recommend the right shaft length and finish.</p>
+        <a href="/#inquiry">Get a Quote →</a>
+    </div>
 </div>
-<footer>&copy; 2026 NINGBO RATO HARDWARE CO.,LTD</footer>`;
+
+<footer>&copy; 2026 NINGBO RATO HARDWARE CO.,LTD · WellLock</footer>
+</body>
+</html>`;
 const LLMS_TXT = `# WellLock — Security Hardware Manufacturer
 # AI-readable site index for LLM crawlers (GPTBot, ClaudeBot, PerplexityBot)
 
@@ -1362,7 +1471,7 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
     </image:image>
   </url>
   <url>
-    <loc>https://welllocks.com/blog</loc>
+    <loc>https://welllocks.com/blog/t-handle-lock-buyers-guide</loc>
     <lastmod>2026-08-13</lastmod>
   </url>
 </urlset>
@@ -1380,7 +1489,7 @@ export default {
       return new Response(LLMS_TXT, { headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "public, max-age=3600" } });
     }
 
-    if (path === "/blog" || path === "/blog/") {
+    if (path === "/blog" || path === "/blog/" || path === "/blog/t-handle-lock-buyers-guide") {
       return new Response(BLOG_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
     }
 
