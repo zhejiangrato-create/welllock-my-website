@@ -3,15 +3,30 @@ const HTML = `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
     <title>WellLock — T Handle Lock Manufacturer | Chrome & Powder-Coated | Ningbo Rato</title>
 
     <!-- ===== SEO ===== -->
     <meta name="description" content="WellLock — China T handle lock manufacturer. Chrome plated & powder-coated zinc alloy T handle locks for garage, RV & truck doors. KA/KD keying, salt spray tested, MOQ 500. OEM/ODM factory direct." />
     <link rel="canonical" href="https://welllocks.com/" />
-    <meta property="og:title" content="WellLock — Security Hardware Manufacturer" />
-    <meta property="og:description" content="China T handle lock manufacturer. Chrome plated & powder-coated zinc alloy T handle locks for garage, RV & truck doors. OEM/ODM factory direct." />
-    <meta property="og:image" content="https://welllocks.com/images/og-image.jpg" />
     <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (Facebook / WhatsApp / LinkedIn 分享) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="WellLock" />
+    <meta property="og:url" content="https://welllocks.com/" />
+    <meta property="og:title" content="WellLock — T Handle Lock Manufacturer | Chrome & Powder-Coated" />
+    <meta property="og:description" content="China T handle lock manufacturer. Chrome plated & powder-coated zinc alloy T handle locks for garage, RV & truck doors. OEM/ODM factory direct." />
+    <meta property="og:image" content="https://welllocks.com/images/t-handle-duo.jpg" />
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="634" />
+    <meta property="og:image:alt" content="T Handle Lock — chrome plated & powder-coated black finishes" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="WellLock — T Handle Lock Manufacturer | Chrome & Powder-Coated" />
+    <meta name="twitter:description" content="China T handle lock manufacturer. Chrome plated & powder-coated zinc alloy T handle locks. OEM/ODM factory direct." />
+    <meta name="twitter:image" content="https://welllocks.com/images/t-handle-duo.jpg" />
 
     <style>
         /* ===== 全局重置 ===== */
