@@ -422,6 +422,41 @@
             font-size: 14px;
         }
 
+        /* ===== 工厂实拍区块 ===== */
+        .factory-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .factory-item {
+            border: 1px solid #eaeaea;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .factory-item img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+        }
+
+        .factory-item .factory-cap {
+            padding: 16px 20px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .factory-item .factory-cap strong {
+            display: block;
+            font-size: 15px;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
         /* ===== 规格对比表 ===== */
         .spec-table {
             border: 1px solid #eaeaea;
@@ -618,6 +653,9 @@
             .thandle-grid {
                 grid-template-columns: 1fr;
             }
+            .factory-grid {
+                grid-template-columns: 1fr;
+            }
             .form-row {
                 grid-template-columns: 1fr;
             }
@@ -655,6 +693,7 @@
             </div>
             <nav>
                 <a href="#about">About</a>
+                <a href="#factory">Factory</a>
                 <a href="#products">Products</a>
                 <a href="#faq">FAQ</a>
                 <a href="/blog">Blog</a>
@@ -698,6 +737,32 @@
                     <p class="number">03</p>
                     <h3>Communication after payment</h3>
                     <p>One dedicated contact handles your order from start to finish. All messages are replied to within 4 hours — even on weekends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 工厂实拍 ===== -->
+    <section class="section" id="factory" style="background:#fafafa;">
+        <div class="container">
+            <p class="section-label">Our Factory</p>
+            <h2>A real factory, <strong>not a trading company</strong></h2>
+            <p class="lead">4,000 m² owned facility in Ningbo, China. We cast, assemble, test and ship in-house — here's what it actually looks like.</p>
+
+            <div class="factory-grid">
+                <div class="factory-item">
+                    <img src="/images/factory-workshop.jpg" alt="WellLock padlock production workshop — workers assembling locks on the production line, Ningbo China" />
+                    <div class="factory-cap">
+                        <strong>Production workshop</strong>
+                        In-house assembly and quality testing — every lock is tested with its key before it ships.
+                    </div>
+                </div>
+                <div class="factory-item">
+                    <img src="/images/factory-warehouse.jpg" alt="WellLock finished goods warehouse — cartons of padlocks and T handle locks ready for export, Ningbo China" />
+                    <div class="factory-cap">
+                        <strong>Finished goods warehouse</strong>
+                        Ready-to-ship inventory of padlocks, T handle locks and cabinet locks for export.
+                    </div>
                 </div>
             </div>
         </div>
