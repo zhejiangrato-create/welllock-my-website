@@ -1571,8 +1571,14 @@ async function handleInquiry(request, env) {
   const industry = body.industry || "Not specified";
   const subject = `[WellLock] ${name} — ${company || "N/A"} [${industry}]`;
 
-  if (env.RESEND_API_KEY) {
-    await fetch("https://api.resend.com/emails", {
+  if (!env.RESEND_API_KEY) {
+    console.error("[INQUIRY] RESEND_API_KEY not configured — email NOT sent.");
+    return Response.json({ success: false, error: "Email not sent: RESEND_API_KEY is not configured on the server." }, { status: 500 });
+  }
+
+  let resendResp;
+  try {
+    resendResp = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -1582,9 +1588,24 @@ async function handleInquiry(request, env) {
         html: `<h2>New Inquiry</h2><table><tr><td><b>Name</b></td><td>${name}</td></tr><tr><td><b>Company</b></td><td>${company||"N/A"}</td></tr><tr><td><b>Industry</b></td><td>${industry}</td></tr><tr><td><b>Email</b></td><td>${email}</td></tr><tr><td><b>Time</b></td><td>${ts}</td></tr><tr><td><b>Message</b></td><td>${message}</td></tr></table>`,
         reply_to: email,
       })
-    }).catch(e => console.error("Resend:", e));
+    });
+  } catch (e) {
+    console.error("[INQUIRY] Resend fetch error:", e);
+    return Response.json({ success: false, error: "Email could not be sent (network error). Please email us directly." }, { status: 502 });
   }
 
-  console.log(`[INQUIRY] ${name} <${email}> — ${company || "N/A"} [${industry}]`);
+  if (!resendResp.ok) {
+    let detail = "";
+    try {
+      const err = await resendResp.json();
+      detail = err && (err.message || err.name) ? (err.message || err.name) : "";
+    } catch (_) {
+      detail = "";
+    }
+    console.error(`[INQUIRY] Resend error ${resendResp.status}: ${detail}`);
+    return Response.json({ success: false, error: `Email not sent (Resend ${resendResp.status}${detail ? ": " + detail : ""}). Please email us directly.` }, { status: 502 });
+  }
+
+  console.log(`[INQUIRY] ${name} <${email}> — ${company || "N/A"} [${industry}] → email sent`);
   return Response.json({ success: true, message: "Thank you! We'll reply within 24 hours." });
 }
