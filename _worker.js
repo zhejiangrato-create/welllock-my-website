@@ -2040,6 +2040,148 @@ const BLOG_COASTAL_HTML = `<!DOCTYPE html>
 </body>
 </html>`;
 
+const BLOG_MK_HTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>40mm Brass Padlock with Master Key System | WellLock</title>
+    <meta name="description" content="40mm brass padlock with master key system for facility and utility use. One master key, per-lock change keys, hardened steel shackle. OEM/ODM." />
+    <link rel="canonical" href="https://welllocks.com/blog/40mm-brass-padlock-master-key-system" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="40mm Brass Padlock with Master Key System | WellLock" />
+    <meta property="og:description" content="40mm brass padlock with master key system for facility and utility use." />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "40mm Brass Padlock with a Master Key System: A Buyer's Guide",
+        "author": {"@type": "Person", "name": "Kevin Huang", "sameAs": "https://www.linkedin.com/in/kevin-huang-0a256870/"},
+        "publisher": {"@type": "Organization", "name": "NINGBO RATO HARDWARE CO.,LTD"},
+        "datePublished": "2026-08-21",
+        "dateModified": "2026-08-21",
+        "mainEntityOfPage": "https://welllocks.com/blog/40mm-brass-padlock-master-key-system"
+    }
+    </script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#fff;color:#1a1a1a;line-height:1.7}
+        .blog-header{background:#1a1a1a;padding:20px 0;border-bottom:3px solid #c9a84c}
+        .blog-header .container{max-width:800px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+        .blog-header a{color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+        .blog-header a:hover{color:#c9a84c}
+        .blog-header .logo{display:flex;align-items:center;gap:10px}
+        .blog-header .logo span{color:#fff;font-weight:700;letter-spacing:.5px}
+        .blog-header .logo span em{color:#c9a84c;font-style:normal}
+        .article{max-width:800px;margin:0 auto;padding:48px 24px}
+        .article .meta{color:#888;font-size:13px;margin-bottom:8px}
+        h1{font-size:32px;font-weight:700;line-height:1.25;margin-bottom:20px}
+        h2{font-size:22px;font-weight:700;margin:36px 0 14px;padding-top:20px;border-top:1px solid #eaeaea}
+        h3{font-size:17px;font-weight:600;margin:24px 0 10px}
+        p{margin-bottom:16px;font-size:16px}
+        ul,ol{margin:0 0 16px 24px}
+        li{margin-bottom:8px;font-size:16px}
+        .article img{max-width:100%;height:auto;border-radius:12px;margin:24px 0;border:1px solid #eaeaea}
+        .callout{background:#fafafa;border-left:4px solid #c9a84c;padding:20px;border-radius:0 8px 8px 0;margin:32px 0}
+        .callout h3{margin-top:0}
+        .cta{background:#1a1a1a;color:#fff;padding:24px;border-radius:12px;margin:40px 0;text-align:center}
+        .cta p{color:#ccc;margin-bottom:16px}
+        .cta a{display:inline-block;background:#c9a84c;color:#1a1a1a;padding:12px 32px;border-radius:30px;text-decoration:none;font-weight:700;font-size:15px}
+        .cta a:hover{background:#d8b95e}
+        .related{margin:40px 0;padding-top:24px;border-top:1px solid #eaeaea;font-size:15px}
+        .related a{color:#c9a84c;text-decoration:none;font-weight:600}
+        .related a:hover{text-decoration:underline}
+        footer{text-align:center;padding:32px;color:#999;font-size:13px;border-top:1px solid #eaeaea}
+        @media(max-width:600px){h1{font-size:26px}h2{font-size:20px}}
+    </style>
+</head>
+<body>
+<div class="blog-header"><div class="container">
+    <a class="logo" href="/"><span>Well<em>Lock</em></span></a>
+    <a href="/#inquiry">Inquiry</a>
+</div></div>
+
+<div class="article">
+    <div class="meta">August 21, 2026 · By <a href="https://www.linkedin.com/in/kevin-huang-0a256870/" target="_blank" rel="noopener">Kevin Huang</a></div>
+    <h1>40mm Brass Padlock with a Master Key System: A Buyer's Guide</h1>
+
+    <p>When you manage lockers, cabinets, utility boxes or a whole facility, the biggest headache isn't the lock itself &mdash; it's the keys. A master key system solves that with one simple idea: <strong>one master key opens them all, while every individual lock keeps its own private key.</strong></p>
+    <p>Here's what to look for when you buy a 40mm brass padlock with a master key system &mdash; and how to avoid the mistakes that cost buyers time and money.</p>
+
+    <h2>What Is a Master Keyed Padlock?</h2>
+    <p>A <strong>master key system</strong> (also called <em>master keyed</em>, or <strong>MK</strong> in keying shorthand) is a keying scheme with two levels:</p>
+    <ul>
+        <li><strong>Master key</strong> &mdash; one key that opens every padlock in the set.</li>
+        <li><strong>Change key</strong> &mdash; a separate key that opens <em>only</em> its own padlock, and not the others.</li>
+    </ul>
+    <p>That's the difference from the two simpler keying options:</p>
+    <ul>
+        <li><strong>Keyed different (KD)</strong> &mdash; every lock has its own unique key. Best for one user per lock.</li>
+        <li><strong>Keyed alike (KA)</strong> &mdash; all locks open with the same key. Best for one person managing many locks.</li>
+        <li><strong>Master keyed (MK)</strong> &mdash; one master key opens all, while each lock keeps its own change key. Best for facility managers, supervisors and utilities.</li>
+    </ul>
+    <p>A master keyed padlock is what a building manager wants when they need to open any locker in an emergency &mdash; while tenants or staff still hold keys that only work on their own lock.</p>
+
+    <h2>Why 40mm Solid Brass?</h2>
+    <p>The <strong>40mm body</strong> sits in the sweet spot: compact enough to fit standard locker and cabinet hasps, large enough to hold a real locking mechanism rather than a toy one.</p>
+    <p>The body is <strong>solid brass</strong> for a reason &mdash; brass resists corrosion in indoor and light-outdoor use, and it machines cleanly so the keyway and cylinder stay precise over years of use.</p>
+    <p>One thing buyers often get wrong: <strong>a "brass padlock" is not all-brass.</strong> The shackle (the U-shaped loop) is made of <strong>quenched-and-tempered steel</strong>, because brass is too soft to resist bolt cutters or prying. The steel shackle is what actually takes the force; the brass is what protects the mechanism. When comparing suppliers, always ask what the shackle is made of &mdash; a cheap all-brass or untreated-steel shackle is the first place cost gets cut.</p>
+
+    <h2>Where Master Keyed Brass Padlocks Are Used</h2>
+    <ul>
+        <li><strong>Facilities &amp; building management</strong> &mdash; schools, hospitals, office buildings and sports centres where a supervisor needs emergency access.</li>
+        <li><strong>Utilities &amp; telecom</strong> &mdash; electricity, water, gas and telecom cabinets that maintenance crews open routinely, but the public shouldn't.</li>
+        <li><strong>Warehouse &amp; storage</strong> &mdash; self-storage units, tool cribs and materials cages with per-team keys plus a manager override.</li>
+        <li><strong>Property &amp; rental</strong> &mdash; equipment lockers, mail rooms, gates and storage areas across a multi-unit site.</li>
+    </ul>
+
+    <h2>7 Things to Check Before You Buy</h2>
+    <ol>
+        <li><strong>The keying plan.</strong> Specify MK up front, and tell the supplier how many locks and how many master keys you need. Retrofitting a master key system later usually means re-keying or replacing every lock.</li>
+        <li><strong>Shackle material &amp; plating.</strong> Ask for quenched-and-tempered steel, and check the plating's salt-spray rating (commonly specified at 24h for the shackle finish) so the shackle doesn't rust before the brass body does.</li>
+        <li><strong>Body construction.</strong> Solid brass body, not brass-plated steel or zinc with a brass look &mdash; these are cheaper, but the cylinder and keyway wear faster.</li>
+        <li><strong>Key retention.</strong> Decide between key-retained (the key can't be removed while open &mdash; safer for shared use) and key-removable.</li>
+        <li><strong>Shackle clearance.</strong> Measure the hasp thickness; a 40mm body doesn't tell you the shackle's inside width or height &mdash; check the spec sheet before you order.</li>
+        <li><strong>MOQ &amp; customisation.</strong> Confirm the minimum order quantity, and whether the supplier can cut key codes to your existing system, stamp a logo, or supply spare change keys.</li>
+        <li><strong>Key numbering.</strong> For facilities, ask for stamped key codes so a lost master key can be traced and controlled.</li>
+    </ol>
+
+    <h2>Common Problems &mdash; and How to Avoid Them</h2>
+    <h3>"The master key doesn't open my lock."</h3>
+    <p>Usually the lock wasn't actually cut into the master key system, or the key code was mis-set. Before ordering in bulk, ask for a pre-production sample with the exact master + change key set, and test it against a real hasp.</p>
+    <h3>"The shackle rusted before the body did."</h3>
+    <p>You bought a lock where only the body is protected. Check the shackle material (quenched-and-tempered steel) and its plating salt-spray rating before ordering.</p>
+    <h3>"My cheap brass padlock looks the same."</h3>
+    <p>Brass-plated steel and zinc bodies are cheaper to make and look similar in a photo. Ask for the body material on the spec sheet &mdash; solid brass is what protects the cylinder from corrosion and wear over years.</p>
+    <h3>"I only got change keys, no master key."</h3>
+    <p>Confirm the master key count in the order. A common default is one master key, but multi-shift or multi-manager sites may want two or more.</p>
+
+    <h2>Why the Supplier Matters More Than the Spec Sheet</h2>
+    <p>A master key system is only as good as the keying precision behind it. Two suppliers can quote the same "40mm brass padlock, MK" and deliver very different results &mdash; one cuts keys that bind or fail after a few months, the other cuts them to hold up for years of daily use.</p>
+    <p>Before you commit to a large order, check three things:</p>
+    <ol>
+        <li><strong>Is it a real factory, or a trading company?</strong> A factory controls the brass casting, the steel shackle heat-treatment and the key cutting in one place &mdash; and can fix a keying error in days, not months.</li>
+        <li><strong>Can they cut to your existing key codes?</strong> If you already run a master key system, a supplier that can match your codes saves you from replacing every lock on site.</li>
+        <li><strong>Will they send a sample first?</strong> Any serious supplier will provide a pre-production sample so you can test the master/change key set before a bulk order.</li>
+    </ol>
+
+    <div class="cta">
+        <p>At WellLock, we manufacture solid brass padlocks with master key (MK) keying &mdash; alongside T-handle locks and industrial paddle locks &mdash; from our own factory in Ningbo, China. Tell us your keying plan and lock count, and we'll spec it with you.</p>
+        <a href="/#inquiry">Get a Recommendation &rarr;</a>
+    </div>
+
+    <div class="related">
+        Read next: <a href="/blog/full-brass-padlock-buyers-guide">Full Brass Padlock Buyer's Guide</a> &middot; <a href="/blog/brass-padlock-size-guide">How to Choose the Right Brass Padlock Size</a> &middot; <a href="/blog/t-handle-lock-buyers-guide">T Handle Lock Buyer's Guide</a>
+    </div>
+</div>
+
+<footer>&copy; 2026 NINGBO RATO HARDWARE CO.,LTD &middot; WellLock</footer>
+</body>
+</html>`;
+
 const BLOG_INDEX_HTML = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2063,6 +2205,7 @@ const BLOG_INDEX_HTML = `<!DOCTYPE html>
         "url": "https://welllocks.com/blog",
         "publisher": {"@type": "Organization", "name": "NINGBO RATO HARDWARE CO.,LTD"},
         "blogPost": [
+            {"@type": "BlogPosting", "headline": "40mm Brass Padlock with a Master Key System: A Buyer's Guide", "url": "https://welllocks.com/blog/40mm-brass-padlock-master-key-system", "datePublished": "2026-08-21"},
             {"@type": "BlogPosting", "headline": "Why Coastal Cities Still Buy So Many Brass Padlocks", "url": "https://welllocks.com/blog/brass-padlocks-coastal-cities", "datePublished": "2026-08-16"},
             {"@type": "BlogPosting", "headline": "Why the Brass Padlock Is a Classic: Reliability, Trust and Material", "url": "https://welllocks.com/blog/why-brass-padlock-is-classic", "datePublished": "2026-08-15"},
             {"@type": "BlogPosting", "headline": "How to Choose the Right Brass Padlock Size: Body Width, Shackle Diameter and Clearance", "url": "https://welllocks.com/blog/brass-padlock-size-guide", "datePublished": "2026-08-15"},
@@ -2106,12 +2249,18 @@ const BLOG_INDEX_HTML = `<!DOCTYPE html>
 </div></div>
 
 <div class="article">
-    <div class="meta">Updated August 16, 2026 · WellLock</div>
+    <div class="meta">Updated August 21, 2026 · WellLock</div>
     <h1>WellLock Blog — Lock Hardware Buyer's Guides</h1>
     <p>Practical, fact-dense guides for B2B buyers choosing padlocks and lock hardware — sizing, materials, keying and supplier checks.</p>
 
     <div class="post-list">
-        <a class="post" href="/blog/brass-padlocks-coastal-cities">
+                <a class="post" href="/blog/40mm-brass-padlock-master-key-system">
+            <h2>40mm Brass Padlock with a Master Key System</h2>
+            <div class="post-meta">August 21, 2026 &middot; Keying</div>
+            <p>Master key (MK) keying for facility and utility use &mdash; one master key, per-lock change keys, and a hardened steel shackle.</p>
+        </a>
+
+<a class="post" href="/blog/brass-padlocks-coastal-cities">
             <h2>Why Coastal Cities Still Buy So Many Brass Padlocks</h2>
             <div class="post-meta">August 16, 2026 · Corrosion &amp; marine use</div>
             <p>Why brass padlocks still dominate coastal cities — salt-spray resistance and a lock that keeps opening.</p>
@@ -2251,35 +2400,39 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://welllocks.com/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <image:image>
       <image:loc>https://welllocks.com/images/t-handle-duo.jpg</image:loc>
       <image:caption>T Handle Lock — chrome plated &amp; powder-coated black</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://welllocks.com/blog/t-handle-lock-buyers-guide</loc>
-    <lastmod>2026-08-13</lastmod>
+    <loc>https://welllocks.com/blog/40mm-brass-padlock-master-key-system</loc>
+    <lastmod>2026-08-21</lastmod>
   </url>
   <url>
-    <loc>https://welllocks.com/blog/full-brass-padlock-buyers-guide</loc>
-    <lastmod>2026-08-14</lastmod>
-  </url>
-  <url>
-    <loc>https://welllocks.com/blog/brass-padlock-size-guide</loc>
-    <lastmod>2026-08-15</lastmod>
-  </url>
-  <url>
-    <loc>https://welllocks.com/blog/why-brass-padlock-is-classic</loc>
-    <lastmod>2026-08-15</lastmod>
+    <loc>https://welllocks.com/blog</loc>
+    <lastmod>2026-08-21</lastmod>
   </url>
   <url>
     <loc>https://welllocks.com/blog/brass-padlocks-coastal-cities</loc>
     <lastmod>2026-08-16</lastmod>
   </url>
   <url>
-    <loc>https://welllocks.com/blog</loc>
+    <loc>https://welllocks.com/blog/why-brass-padlock-is-classic</loc>
     <lastmod>2026-08-15</lastmod>
+  </url>
+  <url>
+    <loc>https://welllocks.com/blog/brass-padlock-size-guide</loc>
+    <lastmod>2026-08-15</lastmod>
+  </url>
+  <url>
+    <loc>https://welllocks.com/blog/full-brass-padlock-buyers-guide</loc>
+    <lastmod>2026-08-14</lastmod>
+  </url>
+  <url>
+    <loc>https://welllocks.com/blog/t-handle-lock-buyers-guide</loc>
+    <lastmod>2026-08-13</lastmod>
   </url>
 </urlset>
 `;
@@ -2310,6 +2463,10 @@ export default {
 
     if (path === "/blog/brass-padlocks-coastal-cities") {
       return new Response(BLOG_COASTAL_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+    }
+
+    if (path === "/blog/40mm-brass-padlock-master-key-system") {
+      return new Response(BLOG_MK_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
     }
 
     if (path === "/blog" || path === "/blog/") {

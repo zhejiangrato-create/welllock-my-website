@@ -3,11 +3,35 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://welllocks.com/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <image:image>
       <image:loc>https://welllocks.com/images/t-handle-duo.jpg</image:loc>
       <image:caption>T Handle Lock — chrome plated &amp; powder-coated black</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://welllocks.com/blog</loc>
+    <lastmod>2026-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://welllocks.com/blog/40mm-brass-padlock-master-key-system</loc>
+    <lastmod>2026-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://welllocks.com/blog/brass-padlocks-coastal-cities</loc>
+    <lastmod>2026-08-16</lastmod>
+  </url>
+  <url>
+    <loc>https://welllocks.com/blog/why-brass-padlock-is-classic</loc>
+    <lastmod>2026-08-15</lastmod>
+  </url>
+  <url>
+    <loc>https://welllocks.com/blog/brass-padlock-size-guide</loc>
+    <lastmod>2026-08-15</lastmod>
+  </url>
+  <url>
+    <loc>https://welllocks.com/blog/full-brass-padlock-buyers-guide</loc>
+    <lastmod>2026-08-14</lastmod>
   </url>
   <url>
     <loc>https://welllocks.com/blog/t-handle-lock-buyers-guide</loc>
