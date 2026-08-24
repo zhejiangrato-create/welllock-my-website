@@ -10,10 +10,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://welllocks.com/blog</loc>
-    <lastmod>2026-08-21</lastmod>
-  </url>
-  <url>
     <loc>https://welllocks.com/blog/40mm-brass-padlock-master-key-system</loc>
     <lastmod>2026-08-24</lastmod>
     <image:image>
@@ -27,6 +23,18 @@
     <image:image>
       <image:loc>https://welllocks.com/images/brass-padlock-mk-keying.jpg</image:loc>
       <image:caption>Master keyed 40mm solid brass padlock with change keys</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://welllocks.com/blog</loc>
+    <lastmod>2026-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://welllocks.com/blog/swing-handle-lock-buyers-guide</loc>
+    <lastmod>2026-08-24</lastmod>
+    <image:image>
+      <image:loc>https://welllocks.com/images/swing-handle-lock.jpg</image:loc>
+      <image:caption>Swing handle lock — zinc alloy, black powder-coated, with key cylinder</image:caption>
     </image:image>
   </url>
   <url>
