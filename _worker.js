@@ -2230,6 +2230,7 @@ const BLOG_INDEX_HTML = `<!DOCTYPE html>
         "url": "https://welllocks.com/blog",
         "publisher": {"@type": "Organization", "name": "NINGBO RATO HARDWARE CO.,LTD"},
         "blogPost": [
+            {"@type": "BlogPosting", "headline": "Lock IP Ratings Explained: A Buyer's Guide to Water & Dust Protection", "url": "https://welllocks.com/blog/lock-ip-rating-explained", "datePublished": "2026-09-02"},
             {"@type": "BlogPosting", "headline": "Swing Handle Locks for Electrical Cabinets: A Buyer's Guide", "url": "https://welllocks.com/blog/swing-handle-lock-buyers-guide", "datePublished": "2026-08-24"},
             {"@type": "BlogPosting", "headline": "40mm Brass Padlock with a Master Key System: A Buyer's Guide", "url": "https://welllocks.com/blog/40mm-brass-padlock-master-key-system", "datePublished": "2026-08-21"},
             {"@type": "BlogPosting", "headline": "Why Coastal Cities Still Buy So Many Brass Padlocks", "url": "https://welllocks.com/blog/brass-padlocks-coastal-cities", "datePublished": "2026-08-16"},
@@ -2280,6 +2281,12 @@ const BLOG_INDEX_HTML = `<!DOCTYPE html>
     <p>Practical, fact-dense guides for B2B buyers choosing padlocks and lock hardware — sizing, materials, keying and supplier checks.</p>
 
     <div class="post-list">
+        <a class="post" href="/blog/lock-ip-rating-explained">
+            <h2>Lock IP Ratings Explained</h2>
+            <div class="post-meta">September 2, 2026 &middot; Water &amp; dust protection</div>
+            <p>How to read IP ratings for locks and cabinet hardware &mdash; IP54, IP65, IP67 and which level your application needs.</p>
+        </a>
+
                 <a class="post" href="/blog/swing-handle-lock-buyers-guide">
             <h2>Swing Handle Lock Buyer's Guide</h2>
             <div class="post-meta">August 24, 2026 · Cabinet &amp; enclosure</div>
@@ -2467,6 +2474,10 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
     </image:image>
   </url>
   <url>
+    <loc>https://welllocks.com/blog/lock-ip-rating-explained</loc>
+    <lastmod>2026-09-02</lastmod>
+  </url>
+  <url>
     <loc>https://welllocks.com/blog/brass-padlocks-coastal-cities</loc>
     <lastmod>2026-08-16</lastmod>
   </url>
@@ -2639,6 +2650,154 @@ const BLOG_SWING_HTML = `<!DOCTYPE html>
 </body>
 </html>`;
 
+const BLOG_IP_HTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lock IP Ratings Explained: T Handle &amp; Cabinet Locks | WellLock</title>
+    <meta name="description" content="How to read IP ratings for locks and cabinet hardware — what IP54, IP65, and IP67 mean for dust and water protection, and which level your application needs." />
+    <link rel="canonical" href="https://welllocks.com/blog/lock-ip-rating-explained" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Lock IP Ratings Explained: T Handle &amp; Cabinet Locks | WellLock" />
+    <meta property="og:description" content="How to read IP ratings for locks and cabinet hardware — what IP54, IP65, and IP67 mean for dust and water protection, and which level your application needs." />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Lock IP Ratings Explained: A Buyer's Guide to Water & Dust Protection",
+    "author": {"@type": "Person", "name": "Kevin Huang", "sameAs": "https://www.linkedin.com/in/kevin-huang-0a256870/"},
+    "publisher": {"@type": "Organization", "name": "NINGBO RATO HARDWARE CO.,LTD"},
+    "datePublished": "2026-09-02",
+    "dateModified": "2026-09-02",
+    "mainEntityOfPage": "https://welllocks.com/blog/lock-ip-rating-explained"
+}
+    </script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#fff;color:#1a1a1a;line-height:1.7}
+        .blog-header{background:#1a1a1a;padding:20px 0;border-bottom:3px solid #c9a84c}
+        .blog-header .container{max-width:800px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+        .blog-header a{color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+        .blog-header a:hover{color:#c9a84c}
+        .blog-header .logo{display:flex;align-items:center;gap:10px}
+        .blog-header .logo span{color:#fff;font-weight:700;letter-spacing:.5px}
+        .blog-header .logo span em{color:#c9a84c;font-style:normal}
+        .article{max-width:800px;margin:0 auto;padding:48px 24px}
+        .article .meta{color:#888;font-size:13px;margin-bottom:8px}
+        h1{font-size:32px;font-weight:700;line-height:1.25;margin-bottom:20px}
+        h2{font-size:22px;font-weight:700;margin:36px 0 14px;padding-top:20px;border-top:1px solid #eaeaea}
+        h3{font-size:17px;font-weight:600;margin:24px 0 10px}
+        p{margin-bottom:16px;font-size:16px}
+        ul,ol{margin:0 0 16px 24px}
+        li{margin-bottom:8px;font-size:16px}
+        table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+        th,td{border:1px solid #e0e0e0;padding:10px 14px;text-align:left}
+        th{background:#f5f5f5;font-weight:600}
+        .cta{background:#1a1a1a;color:#fff;padding:24px;border-radius:12px;margin:40px 0;text-align:center}
+        .cta p{color:#ccc;margin-bottom:16px}
+        .cta a{display:inline-block;background:#c9a84c;color:#1a1a1a;padding:12px 32px;border-radius:30px;text-decoration:none;font-weight:700;font-size:15px}
+        .cta a:hover{background:#d8b95e}
+        .related{margin:40px 0;padding-top:24px;border-top:1px solid #eaeaea;font-size:15px}
+        .related a{color:#c9a84c;text-decoration:none;font-weight:600}
+        .related a:hover{text-decoration:underline}
+        footer{text-align:center;padding:32px;color:#999;font-size:13px;border-top:1px solid #eaeaea}
+        @media(max-width:600px){h1{font-size:26px}h2{font-size:20px}}
+    </style>
+</head>
+<body>
+<div class="blog-header"><div class="container">
+    <a class="logo" href="/"><span>Well<em>Lock</em></span></a>
+    <a href="/#inquiry">Inquiry</a>
+</div></div>
+
+<div class="article">
+    <div class="meta">September 2, 2026 &middot; By <a href="https://www.linkedin.com/in/kevin-huang-0a256870/" target="_blank" rel="noopener">Kevin Huang</a></div>
+    <h1>Lock IP Ratings Explained: A Buyer's Guide to Water &amp; Dust Protection</h1>
+
+    <p>IP stands for Ingress Protection (or International Protection). The rating is defined by IEC 60529 and uses two digits to tell you exactly how well an enclosure &mdash; or a lock fitted into one &mdash; resists solids and liquids.</p>
+    <ul>
+        <li><strong>First digit:</strong> protection against solids (dust, dirt, tools, fingers) &mdash; 0 to 6</li>
+        <li><strong>Second digit:</strong> protection against liquids (drips, sprays, jets, submersion) &mdash; 0 to 9</li>
+    </ul>
+    <p>Higher is not always better. A lock rated IP68 is dust-tight and waterproof to submersion &mdash; but you rarely need that on a cabinet. Choosing the right rating means matching the number to where the hardware actually lives.</p>
+
+    <h2>Where IP Ratings Matter for Locks and Cabinet Hardware</h2>
+    <p>Different installations face very different exposure:</p>
+    <ul>
+        <li><strong>A t handle lock for a garage door</strong> sits in rain, sun, and temperature swings year-round &mdash; and the seal around the square shaft is where water tries to get in.</li>
+        <li><strong>An rv door t handle lock</strong> rides through rain and road spray on a moving vehicle, with vibration working against every gasket.</li>
+        <li><strong>Truck and trailer door locks</strong> collect dust and mud, then face occasional high-pressure washing.</li>
+        <li><strong>Outdoor electrical and telecom enclosures</strong> &mdash; where paddle locks and swing handle locks are common &mdash; sit in rain and wind-blown dust.</li>
+        <li><strong>Indoor equipment doors</strong> may only need basic splash protection.</li>
+    </ul>
+
+    <h2>How to Read the Two Digits</h2>
+    <table>
+        <thead><tr><th>First digit (solids)</th><th>Protection</th><th>Second digit (liquids)</th><th>Protection</th></tr></thead>
+        <tbody>
+            <tr><td>5</td><td>Dust-protected (limited ingress)</td><td>4</td><td>Splashing water, any direction</td></tr>
+            <tr><td>6</td><td>Dust-tight (no ingress)</td><td>5</td><td>Low-pressure water jets</td></tr>
+            <tr><td>6</td><td>Dust-tight</td><td>6</td><td>Powerful water jets</td></tr>
+            <tr><td>6</td><td>Dust-tight</td><td>7</td><td>Temporary immersion (1 m, 30 min)</td></tr>
+        </tbody>
+    </table>
+    <p>Common ratings you'll see on lock and cabinet hardware:</p>
+    <ul>
+        <li><strong>IP54</strong> &mdash; limited dust protection + splash protection. Typical for indoor equipment cabinets and standard enclosures. (For example, a compression-style swing handle lock for server and distribution cabinets is often rated IP54.)</li>
+        <li><strong>IP65</strong> &mdash; dust-tight + water-jet resistant. The baseline for most outdoor electrical enclosures.</li>
+        <li><strong>IP66</strong> &mdash; dust-tight + powerful-jet resistant. For washdown or heavy-exposure environments.</li>
+        <li><strong>IP67</strong> &mdash; dust-tight + temporary immersion. For the harshest outdoor or submerged-duty applications.</li>
+    </ul>
+
+    <h2>5 Things to Check Before You Buy</h2>
+    <ol>
+        <li><strong>Match the rating to the exposure, not the highest number.</strong> IP68 on an indoor cabinet adds cost without adding value.</li>
+        <li><strong>Don't confuse IP rating with corrosion resistance.</strong> IP measures water and dust ingress. Corrosion (rust) is a separate property, measured by salt-spray testing (hours in a neutral salt-spray chamber). A lock can be IP65 yet still rust if the plating is poor &mdash; check both.</li>
+        <li><strong>Ask how the rating is achieved.</strong> Sealing comes from gaskets (EPDM, silicone) and tight tolerances. Ask what seal material is used and how it holds up across temperature cycles.</li>
+        <li><strong>Consider installation.</strong> A surface-mounted lock seals differently than a flush-mounted one. On a square shaft t handle lock, the shaft passes through the door &mdash; the seal around the shaft and the mounting plate is where water tries to get in.</li>
+        <li><strong>Verify the claim.</strong> A trustworthy supplier backs an IP rating with a third-party test report, not just a catalog claim.</li>
+    </ol>
+
+    <h2>Common Questions</h2>
+    <h3>What's the difference between IP54 and IP65?</h3>
+    <p>IP54 is protected against limited dust and splashing water. IP65 is fully dust-tight and resistant to low-pressure water jets. For outdoor enclosures, IP65 is the usual minimum; IP54 suits indoor or sheltered installations.</p>
+    <h3>Is a higher IP rating always better?</h3>
+    <p>Not necessarily. Higher ratings need better sealing, which can cost more and make the lock less convenient to operate. Pick the rating your environment actually requires.</p>
+    <h3>Is an IP rating the same as salt-spray testing?</h3>
+    <p>No. IP covers water and dust ingress. Salt-spray testing measures corrosion resistance in a saline atmosphere. For locks used outdoors or near the coast, you want both &mdash; a solid IP rating and meaningful salt-spray hours.</p>
+    <h3>Do indoor cabinet locks need an IP rating?</h3>
+    <p>Most indoor cabinets don't need a high IP rating. But if the cabinet sits near water, washdown, or dust-heavy production areas, a modest rating like IP54 gives useful protection.</p>
+    <h3>Do garage door and RV door t handle locks need an IP rating?</h3>
+    <p>Most of these locks aren't sold with a formal IP rating &mdash; the hardware is splash-resistant rather than certified dust-tight. What matters more is corrosion resistance (salt-spray) and a seal that doesn't fail under vibration. If the door sees road spray or pressure washing, ask about seal design and salt-spray hours, not just an IP number.</p>
+    <h3>How do I know the supplier's IP rating is real?</h3>
+    <p>Ask for the test report. Reputable manufacturers test to IEC 60529 and can provide documentation on request. In North America, you may also see NEMA ratings (NEMA 4, 4X, 12) &mdash; these serve a similar purpose and roughly map to IP ratings.</p>
+
+    <h2>Before You Choose a Supplier</h2>
+    <p>An IP rating is only as good as the factory behind it. When sourcing locks or cabinet hardware, check that the supplier can:</p>
+    <ul>
+        <li>Provide third-party test reports for the ratings they claim.</li>
+        <li>Explain the seal material and how the rating holds up under temperature and vibration.</li>
+        <li>Supply a sample so you can test fit and sealing in your own enclosure.</li>
+    </ul>
+
+    <div class="cta">
+        <p>If you're sourcing t handle locks, cabinet locks, or padlocks for outdoor applications, we can help you match the right protection level to your environment. Tell us your application and exposure conditions, and we'll recommend the right product &mdash; with test documentation available on request.</p>
+        <a href="/#inquiry">Get a Recommendation &rarr;</a>
+    </div>
+
+    <div class="related">
+        Read next: <a href="/blog/t-handle-lock-buyers-guide">T Handle Lock Buyer's Guide</a> &middot; <a href="/blog/swing-handle-lock-buyers-guide">Swing Handle Lock Buyer's Guide</a> &middot; <a href="/blog/full-brass-padlock-buyers-guide">Full Brass Padlock Buyer's Guide</a>
+    </div>
+</div>
+
+<footer>&copy; 2026 NINGBO RATO HARDWARE CO.,LTD &middot; WellLock</footer>
+</body>
+</html>`;
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -2677,6 +2836,9 @@ export default {
     }
     if (path === "/blog/swing-handle-lock-buyers-guide") {
       return new Response(BLOG_SWING_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+    }
+    if (path === "/blog/lock-ip-rating-explained") {
+      return new Response(BLOG_IP_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
     }
 
 
