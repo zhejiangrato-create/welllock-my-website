@@ -4,10 +4,10 @@ const HTML = `<!DOCTYPE html>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
-    <title>WellLock — T Handle Lock Manufacturer | Chrome & Powder-Coated | Ningbo Rato</title>
+    <title>T Handle Lock Manufacturer | Chrome &amp; Powder-Coated | WellLock</title>
 
     <!-- ===== SEO ===== -->
-    <meta name="description" content="WellLock — China T handle lock manufacturer. Chrome plated & powder-coated zinc alloy T handle locks for garage, RV & truck doors. KA/KD keying, salt spray tested, MOQ 500. OEM/ODM factory direct." />
+    <meta name="description" content="China T handle lock manufacturer. Chrome plated &amp; powder-coated zinc alloy locks for garage, RV &amp; truck doors. KA/KD keying, salt spray tested, OEM/ODM." />
     <link rel="canonical" href="https://welllocks.com/" />
     <meta name="robots" content="index, follow" />
 
@@ -742,8 +742,8 @@ const HTML = `<!DOCTYPE html>
     <section class="hero">
         <div class="container">
             <p class="sub">Security Hardware · OEM &amp; Export</p>
-            <h1>Lock manufacturing that <strong>actually delivers</strong> what you approve.</h1>
-            <p class="desc">From sample to shipment, we make sure your production order matches your approved sample — exactly.</p>
+            <h1>T Handle Lock Manufacturer for <strong>Garage, RV &amp; Truck Doors</strong></h1>
+            <p class="desc">Lock manufacturing that actually delivers what you approve — from sample to shipment, your production order matches your approved sample exactly.</p>
             <div class="btn-group">
                 <a href="#inquiry" class="btn-primary">Get a Quote</a>
                 <a href="#products" class="btn-secondary">View Products</a>
@@ -917,6 +917,34 @@ const HTML = `<!DOCTYPE html>
                 </div>
             </div>
             <p style="text-align:center;margin-top:24px;color:#888;font-size:14px;">Don't see your spec? We do OEM. <a href="#inquiry" style="color:#c9a84c;">Tell us what you need →</a></p>
+        </div>
+    </section>
+
+<!-- ===== 买家指南内链 ===== -->
+    <section class="section" id="guides">
+        <div class="container">
+            <p class="section-label">Buyer's Guides</p>
+            <h2>Read before you <strong>order</strong></h2>
+            <p class="lead" style="text-align:center;color:#666;">Practical guides for OEM buyers — sizing, keying, finishes and IP ratings.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px;">
+                <a href="/blog/t-handle-lock-buyers-guide" style="display:block;background:#fff;border:1px solid #eaeaea;border-radius:8px;padding:20px;text-decoration:none;color:inherit;">
+                    <h3 style="font-size:16px;margin:0 0 6px;color:#1a1a1a;">T Handle Lock Guide: Shaft Size, Material &amp; Keying</h3>
+                    <p style="font-size:14px;color:#666;margin:0;">Square shaft length, chrome vs powder-coated finish, KA/KD keying — for garage, RV and truck doors.</p>
+                </a>
+                <a href="/blog/full-brass-padlock-buyers-guide" style="display:block;background:#fff;border:1px solid #eaeaea;border-radius:8px;padding:20px;text-decoration:none;color:inherit;">
+                    <h3 style="font-size:16px;margin:0 0 6px;color:#1a1a1a;">Solid Brass Padlock Buyer's Guide: Keying &amp; OEM</h3>
+                    <p style="font-size:14px;color:#666;margin:0;">Solid brass vs brass-plated, KA/KD and master keying, and how to verify durability before you order.</p>
+                </a>
+                <a href="/blog/brass-padlock-size-guide" style="display:block;background:#fff;border:1px solid #eaeaea;border-radius:8px;padding:20px;text-decoration:none;color:inherit;">
+                    <h3 style="font-size:16px;margin:0 0 6px;color:#1a1a1a;">Brass Padlock Sizes: Body Width &amp; Shackle Guide</h3>
+                    <p style="font-size:14px;color:#666;margin:0;">Body width, shackle diameter and clearance — matching padlock size to lockers, toolboxes and enclosures.</p>
+                </a>
+                <a href="/blog/lock-ip-rating-explained" style="display:block;background:#fff;border:1px solid #eaeaea;border-radius:8px;padding:20px;text-decoration:none;color:inherit;">
+                    <h3 style="font-size:16px;margin:0 0 6px;color:#1a1a1a;">Lock IP Ratings Explained: IP54 vs IP65 vs IP67</h3>
+                    <p style="font-size:14px;color:#666;margin:0;">What IP54, IP65 and IP67 mean for dust and water protection — and which level your application needs.</p>
+                </a>
+            </div>
+            <p style="text-align:center;margin-top:24px;"><a href="/blog" style="color:#c9a84c;font-weight:500;">Browse all buyer's guides →</a></p>
         </div>
     </section>
 
@@ -1229,7 +1257,7 @@ const BLOG_HTML = `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>T Handle Lock Buyer's Guide: Shaft Size, Material & Keying | WellLock</title>
+    <title>T Handle Lock Guide: Shaft Size, Material &amp; Keying</title>
     <meta name="description" content="How to choose a T handle lock — square shaft length, chrome vs powder-coated finish, KA/KD keying. A practical buyer's guide for garage, RV and truck doors." />
     <link rel="canonical" href="https://welllocks.com/blog/t-handle-lock-buyers-guide" />
     <meta name="robots" content="index, follow" />
@@ -1365,8 +1393,8 @@ const BLOG_BRASS_HTML = `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Full Brass Padlock Buyer's Guide: Solid Brass, Keying & Master Key | WellLock</title>
-    <meta name="description" content="Solid brass vs brass-plated: what to check before buying padlocks for lockers, gyms and storage. Keying options (KA, KD, master key), a real 5+ year durability example, and OEM logo." />
+    <title>Solid Brass Padlock Buyer's Guide: Keying &amp; OEM | WellLock</title>
+    <meta name="description" content="Solid brass vs brass-plated padlocks: what to check before buying for lockers, gyms and storage. KA/KD and master keying, 5+ year durability, OEM logo." />
     <link rel="canonical" href="https://welllocks.com/blog/full-brass-padlock-buyers-guide" />
     <meta name="robots" content="index, follow" />
     <meta property="og:type" content="article" />
@@ -1493,7 +1521,7 @@ const BLOG_SIZE_HTML = `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How to Choose the Right Brass Padlock Size: Body Width, Shackle & Clearance | WellLock</title>
+    <title>Brass Padlock Sizes: Body Width &amp; Shackle Guide | WellLock</title>
     <meta name="description" content="Brass padlock sizes explained — body width, shackle diameter and shackle clearance — and how to match each to lockers, toolboxes, utility enclosures and LOTO before you order." />
     <link rel="canonical" href="https://welllocks.com/blog/brass-padlock-size-guide" />
     <meta name="robots" content="index, follow" />
@@ -1845,7 +1873,7 @@ const BLOG_COASTAL_HTML = `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brass Padlocks in Coastal Cities: Why They Still Dominate | WellLock</title>
+    <title>Brass Padlocks for Coastal &amp; Marine Use | WellLock</title>
     <meta name="description" content="Coastal cities still buy brass padlocks for one reason: brass resists salt-spray corrosion and won't seize. What marine buyers should check before ordering." />
     <link rel="canonical" href="https://welllocks.com/blog/brass-padlocks-coastal-cities" />
     <meta name="robots" content="index, follow" />
@@ -2655,7 +2683,7 @@ const BLOG_IP_HTML = `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lock IP Ratings Explained: T Handle &amp; Cabinet Locks | WellLock</title>
+    <title>Lock IP Ratings Explained: IP54 vs IP65 vs IP67</title>
     <meta name="description" content="How to read IP ratings for locks and cabinet hardware — what IP54, IP65, and IP67 mean for dust and water protection, and which level your application needs." />
     <link rel="canonical" href="https://welllocks.com/blog/lock-ip-rating-explained" />
     <meta name="robots" content="index, follow" />
@@ -2798,6 +2826,47 @@ const BLOG_IP_HTML = `<!DOCTYPE html>
 </body>
 </html>`;
 
+const PAGE_404_HTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Page Not Found (404) | WellLock</title>
+<meta name="robots" content="noindex, follow" />
+<link rel="canonical" href="https://welllocks.com/404.html" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+       background:#fafafa;color:#1a1a1a;line-height:1.6;display:flex;align-items:center;
+       justify-content:center;min-height:100vh;padding:24px}
+  .box{max-width:640px;text-align:center}
+  .code{font-size:96px;font-weight:200;letter-spacing:-4px;color:#c9a84c;line-height:1}
+  h1{font-size:26px;font-weight:600;margin:16px 0 10px}
+  p{color:#666;font-size:16px;margin-bottom:28px}
+  .links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+  a{font-size:14px;font-weight:500;text-decoration:none;padding:10px 22px;border-radius:30px;
+    border:1px solid #ddd;color:#1a1a1a;background:#fff;transition:all .2s}
+  a:hover{border-color:#c9a84c;color:#c9a84c}
+  a.cta{background:#1a1a1a;color:#fff;border-color:#1a1a1a}
+  a.cta:hover{background:#333;color:#fff;border-color:#333}
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="code">404</div>
+  <h1>This page doesn't exist</h1>
+  <p>The link may be broken, or the page may have been moved.<br />
+     Looking for a lock? Here's where to go next.</p>
+  <div class="links">
+    <a class="cta" href="/">Home</a>
+    <a href="/#products">Products</a>
+    <a href="/blog">Buyer's Guides</a>
+    <a href="/#inquiry">Request a Quote</a>
+  </div>
+</div>
+</body>
+</html>`;
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -2893,7 +2962,11 @@ export default {
       return new Response(SITEMAP_XML, { headers: { "Content-Type": "application/xml; charset=utf-8" } });
     }
 
-    return new Response(HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+    if (path === "/" || path === "") {
+      return new Response(HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+    }
+
+    return new Response(PAGE_404_HTML, { status: 404, headers: { "Content-Type": "text/html; charset=utf-8" } });
   }
 };
 
