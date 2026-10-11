@@ -3005,41 +3005,41 @@ export default {
     }
 
     if (path === "/blog/full-brass-padlock-buyers-guide") {
-      return new Response(BLOG_BRASS_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+      return new Response(BLOG_BRASS_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=86400" } });
     }
 
     if (path === "/blog/brass-padlock-size-guide") {
-      return new Response(BLOG_SIZE_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+      return new Response(BLOG_SIZE_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=86400" } });
     }
 
     if (path === "/blog/why-brass-padlock-is-classic") {
-      return new Response(BLOG_CLASSIC_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+      return new Response(BLOG_CLASSIC_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=86400" } });
     }
 
     if (path === "/blog/brass-padlocks-coastal-cities") {
-      return new Response(BLOG_COASTAL_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+      return new Response(BLOG_COASTAL_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=86400" } });
     }
 
     if (path === "/blog/40mm-brass-padlock-master-key-system") {
-      return new Response(BLOG_MK_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+      return new Response(BLOG_MK_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=86400" } });
     }
 
     if (path === "/blog" || path === "/blog/") {
-      return new Response(BLOG_INDEX_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+      return new Response(BLOG_INDEX_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=3600" } });
     }
 
     if (path === "/blog/t-handle-lock-buyers-guide") {
-      return new Response(BLOG_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+      return new Response(BLOG_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=86400" } });
     }
     if (path === "/blog/swing-handle-lock-buyers-guide") {
-      return new Response(BLOG_SWING_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+      return new Response(BLOG_SWING_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=86400" } });
     }
     if (path === "/blog/lock-ip-rating-explained") {
-      return new Response(BLOG_IP_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+      return new Response(BLOG_IP_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=86400" } });
     }
 
     if (path === "/blog/outdoor-furniture-lock-manufacturers") {
-      return new Response(BLOG_OUTDOOR_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+      return new Response(BLOG_OUTDOOR_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=86400" } });
     }
 
 
@@ -3095,10 +3095,10 @@ export default {
     }
 
     if (path === "/" || path === "") {
-      return new Response(HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+      return new Response(HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=300" } });
     }
 
-    return new Response(PAGE_404_HTML, { status: 404, headers: { "Content-Type": "text/html; charset=utf-8" } });
+    return new Response(PAGE_404_HTML, { status: 404, headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=3600" } });
   }
 };
 
