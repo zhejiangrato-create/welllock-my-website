@@ -2258,6 +2258,7 @@ const BLOG_INDEX_HTML = `<!DOCTYPE html>
         "url": "https://welllocks.com/blog",
         "publisher": {"@type": "Organization", "name": "NINGBO RATO HARDWARE CO.,LTD"},
         "blogPost": [
+            {"@type": "BlogPosting", "headline": "Cabinet Lock Replacement: What to Check Before You Swap", "url": "https://welllocks.com/blog/cabinet-lock-replacement-guide", "datePublished": "2026-10-12"},
             {"@type": "BlogPosting", "headline": "Outdoor Furniture Lock: A Buyer's Guide for Manufacturers", "url": "https://welllocks.com/blog/outdoor-furniture-lock-manufacturers", "datePublished": "2026-09-18"},
             {"@type": "BlogPosting", "headline": "Lock IP Ratings Explained: A Buyer's Guide to Water & Dust Protection", "url": "https://welllocks.com/blog/lock-ip-rating-explained", "datePublished": "2026-09-02"},
             {"@type": "BlogPosting", "headline": "Swing Handle Locks for Electrical Cabinets: A Buyer's Guide", "url": "https://welllocks.com/blog/swing-handle-lock-buyers-guide", "datePublished": "2026-08-24"},
@@ -2310,6 +2311,12 @@ const BLOG_INDEX_HTML = `<!DOCTYPE html>
     <p>Practical, fact-dense guides for B2B buyers choosing padlocks and lock hardware — sizing, materials, keying and supplier checks.</p>
 
     <div class="post-list">
+        <a class="post" href="/blog/cabinet-lock-replacement-guide">
+            <h2>Cabinet Lock Replacement Guide</h2>
+            <div class="post-meta">October 12, 2026 &middot; Cabinet &amp; furniture</div>
+            <p>Replacing or upgrading cabinet locks &mdash; matching mounting, material and finish so the new lock fits and lasts.</p>
+        </a>
+
         <a class="post" href="/blog/outdoor-furniture-lock-manufacturers">
             <h2>Outdoor Furniture Lock Guide</h2>
             <div class="post-meta">September 18, 2026 &middot; Outdoor &amp; weather-resistant</div>
@@ -2515,6 +2522,10 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url>
     <loc>https://welllocks.com/blog/outdoor-furniture-lock-manufacturers</loc>
     <lastmod>2026-09-18</lastmod>
+  </url>
+  <url>
+    <loc>https://welllocks.com/blog/cabinet-lock-replacement-guide</loc>
+    <lastmod>2026-10-12</lastmod>
   </url>
   <url>
     <loc>https://welllocks.com/blog/brass-padlocks-coastal-cities</loc>
@@ -2954,6 +2965,124 @@ const BLOG_OUTDOOR_HTML = `<!DOCTYPE html>
 </body>
 </html>`;
 
+const BLOG_CABINET_HTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cabinet Lock Replacement: What to Check First</title>
+    <meta name="description" content="Replacing or upgrading cabinet locks — match the mounting and material so the new lock fits and lasts. A checklist for furniture makers and buyers." />
+    <link rel="canonical" href="https://welllocks.com/blog/cabinet-lock-replacement-guide" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Cabinet Lock Replacement: What to Check First | WellLock" />
+    <meta property="og:description" content="Replacing or upgrading cabinet locks — match the mounting and material so the new lock fits and lasts." />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cabinet Lock Replacement: What to Check Before You Swap",
+    "author": {"@type": "Person", "name": "Kevin Huang", "sameAs": "https://www.linkedin.com/in/kevin-huang-0a256870/"},
+    "publisher": {"@type": "Organization", "name": "NINGBO RATO HARDWARE CO.,LTD"},
+    "datePublished": "2026-10-12",
+    "dateModified": "2026-10-12",
+    "mainEntityOfPage": "https://welllocks.com/blog/cabinet-lock-replacement-guide"
+}
+    </script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#fff;color:#1a1a1a;line-height:1.7}
+        .blog-header{background:#1a1a1a;padding:20px 0;border-bottom:3px solid #c9a84c}
+        .blog-header .container{max-width:800px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+        .blog-header a{color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+        .blog-header a:hover{color:#c9a84c}
+        .blog-header .logo{display:flex;align-items:center;gap:10px}
+        .blog-header .logo span{color:#fff;font-weight:700;letter-spacing:.5px}
+        .blog-header .logo span em{color:#c9a84c;font-style:normal}
+        .article{max-width:800px;margin:0 auto;padding:48px 24px}
+        .article .meta{color:#888;font-size:13px;margin-bottom:8px}
+        h1{font-size:32px;font-weight:700;line-height:1.25;margin-bottom:20px}
+        h2{font-size:22px;font-weight:700;margin:36px 0 14px;padding-top:20px;border-top:1px solid #eaeaea}
+        h3{font-size:17px;font-weight:600;margin:24px 0 10px}
+        p{margin-bottom:16px;font-size:16px}
+        ul,ol{margin:0 0 16px 24px}
+        li{margin-bottom:8px;font-size:16px}
+        table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+        th,td{border:1px solid #e0e0e0;padding:10px 14px;text-align:left}
+        th{background:#f5f5f5;font-weight:600}
+        .cta{background:#1a1a1a;color:#fff;padding:24px;border-radius:12px;margin:40px 0;text-align:center}
+        .cta p{color:#ccc;margin-bottom:16px}
+        .cta a{display:inline-block;background:#c9a84c;color:#1a1a1a;padding:12px 32px;border-radius:30px;text-decoration:none;font-weight:700;font-size:15px}
+        .cta a:hover{background:#d8b95e}
+        .related{margin:40px 0;padding-top:24px;border-top:1px solid #eaeaea;font-size:15px}
+        .related a{color:#c9a84c;text-decoration:none;font-weight:600}
+        .related a:hover{text-decoration:underline}
+        footer{text-align:center;padding:32px;color:#999;font-size:13px;border-top:1px solid #eaeaea}
+        @media(max-width:600px){h1{font-size:26px}h2{font-size:20px}}
+    </style>
+</head>
+<body>
+<div class="blog-header"><div class="container">
+    <a class="logo" href="/"><span>Well<em>Lock</em></span></a>
+    <a href="/#inquiry">Inquiry</a>
+</div></div>
+
+<div class="article">
+    <div class="meta">October 12, 2026 &middot; By <a href="https://www.linkedin.com/in/kevin-huang-0a256870/" target="_blank" rel="noopener">Kevin Huang</a></div>
+    <h1>Cabinet Lock Replacement: What to Check Before You Swap</h1>
+
+    <p>Replacing a cabinet lock sounds simple &mdash; remove the old one, fit the new one. But most "quick swaps" fail on the details: the mounting holes don't line up, the material can't handle the environment, or the keying doesn't match the rest of the furniture run.</p>
+    <p>This guide covers what to check before you replace or upgrade a cabinet lock, so the new lock fits the first time and lasts.</p>
+
+    <h2>Why lock updates go wrong</h2>
+    <p>Two things cause almost every failed replacement:</p>
+    <ol>
+        <li><strong>Mounting mismatch.</strong> These are not one-size-fits-all. A paddle lock, a cam lock, and a combination lock each mount differently, with different hole spacing and panel thickness requirements. Order the wrong type and the door won't close properly.</li>
+        <li><strong>Wrong material for the job.</strong> A lock that works indoors may rust fast in a humid bathroom or coastal home. The body material and finish decide whether the replacement lasts a season or a decade.</li>
+    </ol>
+
+    <h2>Where these locks are used</h2>
+    <ul>
+        <li><strong>Wardrobes and closets</strong> &mdash; sliding or hinged doors that need a flush lock.</li>
+        <li><strong>Storage and file cabinets</strong> &mdash; office and utility furniture with cam or paddle locks.</li>
+        <li><strong>Kitchen and utility cabinets</strong> &mdash; cabinet doors and drawers in humid, high-use spaces.</li>
+        <li><strong>Display and retail cabinets</strong> &mdash; glass-door showcases needing a discreet lock.</li>
+    </ul>
+
+    <h2>What to check before you replace</h2>
+    <p><strong>1. Mounting and hole pattern.</strong> Before ordering, measure the existing hole spacing, panel thickness, and the cutout shape. A paddle lock bolts through the door face and needs a rectangular cutout; a cam lock turns in a round hole. Match these to the new lock, or the swap turns into re-drilling.</p>
+    <p><strong>2. Body material.</strong> Zinc alloy is the workhorse &mdash; corrosion-resistant and strong enough for daily use. Solid brass adds a higher-end look and better corrosion resistance for humid or coastal homes. Choose the material that matches where the cabinet lives.</p>
+    <p><strong>3. Lock type.</strong> Match the type to how the cabinet is used. A flush-mount paddle lock sits nearly flat and suits storage and utility cabinets. A combination lock removes keys entirely &mdash; useful for lockers and shared storage.</p>
+    <p><strong>4. Finish and corrosion resistance.</strong> The finish protects the metal. A powder-coated finish holds up to salt spray much longer than plain chrome &mdash; around 72 hours versus 24 hours in salt-spray testing. For bathrooms and coastal homes, choose the better finish.</p>
+    <p><strong>5. Keying.</strong> If you're fitting a whole run of cabinets, decide up front: keyed-alike (KA) lets one key open every unit, keyed-different (KD) gives each unit its own key. Confirm the supplier offers both on the same SKU.</p>
+
+    <h2>Common problems and how to avoid them</h2>
+    <p><strong>"The new lock doesn't fit the old holes."</strong></p>
+    <p>Measure the hole pattern and cutout before ordering, and ask the supplier for a dimension drawing. A sample before the bulk order catches this early.</p>
+    <p><strong>"The lock rusted within a year."</strong></p>
+    <p>This is a finish or material problem, not a "locks are like that" problem. Ask for the salt-spray test hours &mdash; a powder-coated zinc-alloy lock should reach 72 hours, while plain chrome stops around 24.</p>
+    <p><strong>"Keys are a hassle for a whole cabinet run."</strong></p>
+    <p>Keyed-alike keeps one key across the run. For lockers and shared spaces, a resettable combination lock removes keys completely.</p>
+
+    <h2>Why the supplier matters</h2>
+    <p>A lock is small, but it's the part the customer touches every day. A supplier who can give you a dimension drawing, state the material and salt-spray hours in writing, and ship a sample before the bulk order is the one that keeps your warranty costs down.</p>
+
+    <div class="cta">
+        <p>If you make or fit wardrobes, storage cabinets, or utility furniture and need zinc-alloy paddle locks or combination locks, tell us your application &mdash; we'll match the mounting, finish, and keying to your product.</p>
+        <a href="/#inquiry">Request Specs &amp; Samples &rarr;</a>
+    </div>
+
+    <div class="related">
+        Read next: <a href="/blog/outdoor-furniture-lock-manufacturers">Outdoor Furniture Lock Guide</a> &middot; <a href="/blog/swing-handle-lock-buyers-guide">Swing Handle Lock Buyer's Guide</a> &middot; <a href="/blog/lock-ip-rating-explained">Lock IP Ratings Explained</a>
+    </div>
+</div>
+
+<footer>&copy; 2026 NINGBO RATO HARDWARE CO.,LTD &middot; WellLock</footer>
+</body>
+</html>`;
+
 const PAGE_404_HTML = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -3040,6 +3169,10 @@ export default {
 
     if (path === "/blog/outdoor-furniture-lock-manufacturers") {
       return new Response(BLOG_OUTDOOR_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=86400" } });
+    }
+
+    if (path === "/blog/cabinet-lock-replacement-guide") {
+      return new Response(BLOG_CABINET_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=86400" } });
     }
 
 
