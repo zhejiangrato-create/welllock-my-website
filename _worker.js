@@ -2544,20 +2544,17 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url>
     <loc>https://welllocks.com/blog/bangladesh-customer-visit</loc>
     <lastmod>2026-10-12</lastmod>
-  <url>
-    <loc>https://welllocks.com/blog/bangladesh-customer-visit</loc>
-    <lastmod>2026-10-12</lastmod>
+    <image:image>
+      <image:loc>https://welllocks.com/images/visit-bangladesh.jpg</image:loc>
+      <image:caption>NBRATO team with a customer delegation from Bangladesh</image:caption>
+    </image:image>
+  </url>
   <url>
     <loc>https://welllocks.com/blog/security-cable-lock-retail-displays</loc>
     <lastmod>2026-10-12</lastmod>
     <image:image>
       <image:loc>https://welllocks.com/images/security-cable-lock.jpg</image:loc>
       <image:caption>Security cable lock set for retail displays</image:caption>
-    </image:image>
-  </url>
-    <image:image>
-      <image:loc>https://welllocks.com/images/visit-bangladesh.jpg</image:loc>
-      <image:caption>NBRATO team with a customer delegation from Bangladesh</image:caption>
     </image:image>
   </url>
   <url>
