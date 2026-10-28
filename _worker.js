@@ -3319,7 +3319,6 @@ const PAGE_404_HTML = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Page Not Found (404) | WellLock</title>
 <meta name="robots" content="noindex, follow" />
-<link rel="canonical" href="https://welllocks.com/404.html" />
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
   body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
